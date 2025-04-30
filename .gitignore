@@ -1,0 +1,14 @@
+# Compiled site
+_site
+
+# Caches
+.sass-cache/
+.jekyll-cache/
+
+# Bundler
+.bundle/
+vendor/
+Gemfile.lock
+
+# IDE
+nbproject/

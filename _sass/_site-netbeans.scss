@@ -1,0 +1,55 @@
+
+body {
+
+  #page-title {
+    h1 {
+      background-image: url("../assets/apache-netbeans.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right center;
+      margin-right: 1em;
+      padding-right: 4em;
+      @include media ($mobile) {
+        min-height: 100px;
+      }
+    }
+  }
+
+  .downloads {
+    border-top: 1px solid $light-gray;
+  }
+
+  .terms, aside {
+    font-size: 0.85em;
+    color: $medium-gray;
+  }
+
+  .download-arch {
+    h3 {
+      margin: 0;
+    }
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid $light-gray;
+    aside {
+        margin-bottom: 1em;
+    }
+  }
+
+  .btn {
+    .fa {
+      font-size: 1.2em;
+      margin-right: 0.25em;
+    }
+    .type-arch, .extra-info {
+      font-size: 0.75em;
+    }
+  }
+
+  .hash {
+    line-break: anywhere;
+    font-size: 0.8em;
+    background-color: transparent;
+  }
+
+}
