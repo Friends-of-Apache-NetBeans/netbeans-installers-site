@@ -1,27 +1,30 @@
 ---
 layout: page
-title: "Apache NetBeans 27 packages"
+title: "Apache NetBeans 28 packages"
 
-netbeans-version: 27
-jdk-version: 24
+netbeans-version: 28
+jdk-version: 25
 
-exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27.exe
-exe-x64-hash: 6180e321d9897da4b47690eab67afbb431f413f82f2443107910766dabc1a935
+exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/Apache-NetBeans-28.exe
+exe-x64-hash: c85c7376c39b144332969a45037d4dd9424dc508c8f9b71e466dbc5ed9d136f6
 
+test-cert-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/FoAN_test.cer
+test-cert-hash: 6b4d8128b3d118456d7f6d891f5badd7ed192788ecefac8f265a693c4f0366a1
+test-dert-png: 
 pkg-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-x86_64.pkg
 pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
 
 pkg-arm-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-arm64.pkg
 pkg-arm-hash: 1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d
 
-deb-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/apache-netbeans_27-1_amd64.deb
-deb-x64-hash: b500d1dca5517815338dd3414e8eb630a312c9f8caa0be2880bc02cba4c558c8
+deb-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_amd64.deb
+deb-x64-hash: 879737c87abd034d9b19aa0964f1885759b14ee8aa188bbdd88b552a40063704
 
-rpm-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/apache-netbeans-27-0.x86_64.rpm
-rpm-x64-hash: 7f14e669a19e4dfe34b15ca8a23eea6728d990f20233be4a4edd415d40bf8e1c
+rpm-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans-28-0.x86_64.rpm
+rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa47f5
 
-deb-arm-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/apache-netbeans_27-1_arm64.deb
-deb-arm-hash: 0fee195bcf7e753262f66641e623ed84604d30ec809749c07f5ac07f1626bc66
+deb-arm-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_arm64.deb
+deb-arm-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
 ---
 
 <section>
@@ -57,6 +60,14 @@ deb-arm-hash: 0fee195bcf7e753262f66641e623ed84604d30ec809749c07f5ac07f1626bc66
     <a href="https://netbeans.apache.org/community/mailing-lists/">Apache NetBeans mailing lists</a>.</p>
 </section>
 
+<section class="support">
+  <h2>This is a transitional installers release.</h2>
+  <p>We are in the transition of providing signed installers by Friends of Apache NetBeans itself. 
+    This implies that we have a short period that the Windows installer is signed with a test certificate. 
+    It also implies that the macOS releases are postponed until further notice. Currently the links for macOS 
+    point to release 27.
+  </p>
+<section>
 <section class="downloads">
   <h2>Downloads</h2>
   <section class="download-arch">
@@ -68,12 +79,19 @@ deb-arm-hash: 0fee195bcf7e753262f66641e623ed84604d30ec809749c07f5ac07f1626bc66
     <aside>
       <code class="hash">SHA256 : {{ page.exe-x64-hash }}</code>
     </aside>
+    <div>
+      <a href="{{ page.test-cert-link }}" 
+          class="btn"><i class="fa fa-windows"></i>Test Certificate</a>
+    </div>
+    <aside>
+      <code class="hash">SHA256 : {{ page.test-cert-hash }}</code>
+    </aside>
   </section>
   <section class="download-arch">
     <h3>macOS (x86_64)</h3>
     <div><a href="{{ page.pkg-x64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
+        Apache NetBeans 27 + JDK 24 <!--{{ page.netbeans-version }} + JDK {{ page.jdk-version }} -->
         <span class="type-arch">(.pkg x86_64)</span></a></div>
     <aside>
       <code class="hash">SHA256 : {{ page.pkg-x64-hash }}</code>
@@ -83,7 +101,7 @@ deb-arm-hash: 0fee195bcf7e753262f66641e623ed84604d30ec809749c07f5ac07f1626bc66
     <h3>macOS (arm64)</h3>
     <div><a href="{{ page.pkg-arm-link }}" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
+        Apache NetBeans 27 + JDK 24 <!--{{ page.netbeans-version }} + JDK {{ page.jdk-version }} -->
         <span class="type-arch">(.pkg arm64)</span></a></div>
     <aside>
       <code class="hash">SHA256 : {{ page.pkg-arm-hash }}</code>
@@ -137,4 +155,23 @@ deb-arm-hash: 0fee195bcf7e753262f66641e623ed84604d30ec809749c07f5ac07f1626bc66
     Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc.
     Java and OpenJDK are registered trademarks of Oracle and/or its affiliates.
     All other trademarks are the property of their respective holders and used here only for identification purposes.</p>
+
+  <h2>Transitional releases</h2>
+  <p>Currently we are waiting for 
+    <ul>
+    <li>A GlobalSign certificate naming Friends of Apache NetBeans.</li>
+    <li>Acceptance by Apple Developer support as FOSS publisher, so that we can sign and notarize the Apple macOS releases.</li>
+    </ul>
+    <p>As soon as either condition is completed, we will make the associated signed release available and replace the links with links to the 
+    signed release. 
+    </p>
+  </p>
+  <h3>Transitional test certificate installation, Windows</h3>
+  <p>To install the <a href="{{page.test-cert-link }}">self signed root certificate</a> in Windows, download it and then right-click it to install the certificate.<br>
+  Choose Local Machine, then Next and choose <i>Place all certificates in the following store</i> and select <b>Truste Root Certification Authorities</b>.
+  Then you can install the netbeans installer. Right-click on the downloaded exe file and <b>Run as Administrator</b>. Windows will provided a warning that this software is from an unknown punblisher.
+  When you choose to show the license information you will be presented with something similar to the image below.<img src="{{ page.test-cert-png }}" alt="cert info"/>  
+</p>
+  <p></p>
+
 </section>
