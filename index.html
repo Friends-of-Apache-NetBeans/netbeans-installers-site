@@ -5,12 +5,12 @@ title: "Apache NetBeans 28 packages"
 netbeans-version: 28
 jdk-version: 25
 
-exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/Apache-NetBeans-28.exe
-exe-x64-hash: c85c7376c39b144332969a45037d4dd9424dc508c8f9b71e466dbc5ed9d136f6
-
 test-cert-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/FoAN_test.cer
 test-cert-hash: 6b4d8128b3d118456d7f6d891f5badd7ed192788ecefac8f265a693c4f0366a1
 test-cert-png: assets/FoAN-test.png
+
+exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/Apache-NetBeans-28.exe
+exe-x64-hash: c85c7376c39b144332969a45037d4dd9424dc508c8f9b71e466dbc5ed9d136f6
 
 pkg-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-x86_64.pkg
 pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
@@ -168,7 +168,7 @@ deb-arm-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
     </p>
   </p>
   <h3>Transitional test certificate installation, Windows</h3>
-  <p>To install the <a href="{{page.test-cert-link }}">self signed root certificate</a> in Windows, download it and then right-click it to install the certificate.<br>
+  <p>To install the <a href="{{ page.test-cert-link }}">self signed root certificate</a> in Windows, download it and then right-click it to install the certificate.<br>
   <b>Choose Local Machine</b>, then Next and choose <b>Place all certificates in the following store</b> and select 
   <b>Trusted Root Certification Authorities</b>.<br>
   Then you can use the downloaded installer to install Apache NetBeans. Right-click on the downloaded exe file and <b>Run as Administrator</b>.
