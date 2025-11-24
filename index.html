@@ -9,23 +9,23 @@ test-cert-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installer
 test-cert-hash: 6b4d8128b3d118456d7f6d891f5badd7ed192788ecefac8f265a693c4f0366a1
 test-cert-png: assets/FoAN-test.png
 
-exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/Apache-NetBeans-28.exe
-exe-x64-hash: c85c7376c39b144332969a45037d4dd9424dc508c8f9b71e466dbc5ed9d136f6
+windows-exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/Apache-NetBeans-28.exe
+windows-exe-x64-hash: c85c7376c39b144332969a45037d4dd9424dc508c8f9b71e466dbc5ed9d136f6
 
-pkg-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-x86_64.pkg
-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
+macos-pkg-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-x86_64.pkg
+macos-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
 
-pkg-arm-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-arm64.pkg
-pkg-arm-hash: 1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d
+macos-pkg-arm64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-arm64.pkg
+macos-pkg-arm64-hash: 1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d
 
-deb-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_amd64.deb
-deb-x64-hash: 879737c87abd034d9b19aa0964f1885759b14ee8aa188bbdd88b552a40063704
+linux-deb-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_amd64.deb
+linux-deb-x64-hash: 879737c87abd034d9b19aa0964f1885759b14ee8aa188bbdd88b552a40063704
 
-rpm-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans-28-0.x86_64.rpm
-rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa47f5
+linux-rpm-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans-28-0.x86_64.rpm
+linux-rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa47f5
 
-deb-arm-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_arm64.deb
-deb-arm-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
+linux-deb-arm64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_arm64.deb
+linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
 ---
 
 <section>
@@ -73,12 +73,12 @@ deb-arm-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
   <h2>Downloads</h2>
   <section class="download-arch">
     <h3>Windows (x86_64)</h3>
-    <div><a href="{{ page.exe-x64-link }}" 
+    <div><a href="{{ page.windows-exe-x64-link }}" 
             class="btn"><i class="fa fa-windows"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.exe x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.exe-x64-hash }}</code>
+      <code class="hash">SHA256 : {{ page.windows-exe-x64-hash }}</code>
     </aside>
     <div>
       <a href="{{ page.test-cert-link }}" 
@@ -90,51 +90,51 @@ deb-arm-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
   </section>
   <section class="download-arch">
     <h3>macOS (x86_64)</h3>
-    <div><a href="{{ page.pkg-x64-link }}" 
+    <div><a href="{{ page.macos-pkg-x64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
         Apache NetBeans 27 + JDK 24 <!--{{ page.netbeans-version }} + JDK {{ page.jdk-version }} -->
         <span class="type-arch">(.pkg x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.pkg-x64-hash }}</code>
+      <code class="hash">SHA256 : {{ page.macos-pkg-x64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>macOS (arm64)</h3>
-    <div><a href="{{ page.pkg-arm-link }}" 
+    <div><a href="{{ page.macos-pkg-arm64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
         Apache NetBeans 27 + JDK 24 <!--{{ page.netbeans-version }} + JDK {{ page.jdk-version }} -->
         <span class="type-arch">(.pkg arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.pkg-arm-hash }}</code>
+      <code class="hash">SHA256 : {{ page.macos-pkg-arm64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
-    <div><a href="{{ page.deb-x64-link }}" 
+    <div><a href="{{ page.linux-deb-x64-link }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.deb x86_64)</span></a></div>
-    <aside><code class="hash">SHA256 : {{ page.deb-x64-hash }}</code><br>
+    <aside><code class="hash">SHA256 : {{ page.linux-deb-x64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
-    <div><a href="{{ page.rpm-x64-link }}" 
+    <div><a href="{{ page.linux-rpm-x64-link }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.rpm x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.rpm-x64-hash }}</code><br>
+      <code class="hash">SHA256 : {{ page.linux-rpm-x64-hash }}</code><br>
       The .rpm package should be installed using the distribution software manager,
       or using eg. <code>sudo dnf install ./FILENAME</code>.
     </aside>
   </section>
   <section class="download-arch">
     <h3>Linux (arm64)</h3>
-    <div><a href="{{ page.deb-arm-link }}" 
+    <div><a href="{{ page.linux-deb-arm64-link }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.deb arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.deb-arm-hash }}</code><br>
+      <code class="hash">SHA256 : {{ page.linux-deb-arm64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.<br>
       If using this package on a Raspberry Pi, we recommend switching from Wayland to X11.</aside>
