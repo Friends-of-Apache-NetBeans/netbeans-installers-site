@@ -5,11 +5,13 @@ title: "Apache NetBeans 28 packages"
 netbeans-version: 28
 jdk-version: 25
 
-test-cert-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/FoAN_test.cer
+downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1
+
+test-cert-file: /FoAN_test.cer
 test-cert-hash: 6b4d8128b3d118456d7f6d891f5badd7ed192788ecefac8f265a693c4f0366a1
 test-cert-png: assets/FoAN-test.png
 
-windows-exe-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/Apache-NetBeans-28.exe
+windows-exe-x64-file: Apache-NetBeans-28.exe
 windows-exe-x64-hash: c85c7376c39b144332969a45037d4dd9424dc508c8f9b71e466dbc5ed9d136f6
 
 macos-pkg-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-x86_64.pkg
@@ -18,13 +20,13 @@ macos-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab43
 macos-pkg-arm64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-arm64.pkg
 macos-pkg-arm64-hash: 1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d
 
-linux-deb-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_amd64.deb
+linux-deb-x64-file: apache-netbeans_28-1_amd64.deb
 linux-deb-x64-hash: 879737c87abd034d9b19aa0964f1885759b14ee8aa188bbdd88b552a40063704
 
-linux-rpm-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans-28-0.x86_64.rpm
+linux-rpm-x64-file: apache-netbeans-28-0.x86_64.rpm
 linux-rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa47f5
 
-linux-deb-arm64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1/apache-netbeans_28-1_arm64.deb
+linux-deb-arm64-file: apache-netbeans_28-1_arm64.deb
 linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
 ---
 
@@ -73,7 +75,7 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
   <h2>Downloads</h2>
   <section class="download-arch">
     <h3>Windows (x86_64)</h3>
-    <div><a href="{{ page.windows-exe-x64-link }}" 
+    <div><a href="{{ page.downloadbase }}/{{ page.windows-exe-x64-file }}" 
             class="btn"><i class="fa fa-windows"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.exe x86_64)</span></a></div>
@@ -81,7 +83,7 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
       <code class="hash">SHA256 : {{ page.windows-exe-x64-hash }}</code>
     </aside>
     <div>
-      <a href="{{ page.test-cert-link }}" 
+      <a href="{{ page.test-cert-file }}" 
           class="btn"><i class="fa fa-windows"></i>Test Certificate</a>
     </div>
     <aside>
@@ -110,14 +112,14 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
   </section>
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
-    <div><a href="{{ page.linux-deb-x64-link }}" 
+    <div><a href="{{ page.downloadbase }}/{{ page.linux-deb-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.deb x86_64)</span></a></div>
     <aside><code class="hash">SHA256 : {{ page.linux-deb-x64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
-    <div><a href="{{ page.linux-rpm-x64-link }}" 
+    <div><a href="{{ page.downloadbase }}/{{ page.linux-rpm-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.rpm x86_64)</span></a></div>
@@ -129,7 +131,7 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
   </section>
   <section class="download-arch">
     <h3>Linux (arm64)</h3>
-    <div><a href="{{ page.linux-deb-arm64-link }}" 
+    <div><a href="{{ page.downloadbase }}/{{ page.linux-deb-arm64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
         <span class="type-arch">(.deb arm64)</span></a></div>
@@ -168,7 +170,7 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
     </p>
   </p>
   <h3>Transitional test certificate installation, Windows</h3>
-  <p>To install the <a href="{{ page.test-cert-link }}">self signed root certificate</a> in Windows, download it and then right-click it to install the certificate.<br>
+  <p>To install the <a href="{{ page.test-cert-file }}">self signed root certificate</a> in Windows, download it and then right-click it to install the certificate.<br>
   <b>Choose Local Machine</b>, then Next and choose <b>Place all certificates in the following store</b> and select 
   <b>Trusted Root Certification Authorities</b>.<br>
   Then you can use the downloaded installer to install Apache NetBeans. Right-click on the downloaded exe file and <b>Run as Administrator</b>.
