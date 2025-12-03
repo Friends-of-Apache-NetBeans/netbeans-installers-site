@@ -42,7 +42,8 @@ class PatchUp {
         try {
             Files.lines(source)
                     .forEach(l -> {
-                        activeFilter.filter(this, l)
+                        activeFilter
+                                .filter(this, l)
                                 .ifPresent(System.out::println);
                     });
         } catch (IOException ex) {
