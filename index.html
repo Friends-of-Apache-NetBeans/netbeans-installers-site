@@ -1,37 +1,6 @@
 ---
 layout: page
 title: "Apache NetBeans 28 packages"
-
-netbeans-version: 28
-jdk-version: 25
-test-cert-file: /FoAN_test.cer
-test-cert-hash: 6b4d8128b3d118456d7f6d891f5badd7ed192788ecefac8f265a693c4f0366a1
-test-cert-png: assets/FoAN-test.png
-
-# patchMe
-
-downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1
-
-windows-exe-x64-file: Apache-NetBeans-28.exe
-windows-exe-x64-hash: c87ae281ccb3ac85ef9e4098bf85671d32e5d7139e71988c8059ae0e66aaf4b4
-
-macos-pkg-x64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-x86_64.pkg
-macos-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
-
-macos-pkg-arm64-link: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-arm64.pkg
-macos-pkg-arm64-hash: 1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d
-
-linux-deb-x64-file: apache-netbeans_28-1_amd64.deb
-linux-deb-x64-hash: 879737c87abd034d9b19aa0964f1885759b14ee8aa188bbdd88b552a40063704
-
-linux-rpm-x64-file: apache-netbeans-28-0.x86_64.rpm
-linux-rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa47f5
-
-linux-deb-arm64-file: apache-netbeans_28-1_arm64.deb
-linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
-
-# /patchMe
-    
 ---
 
 <section>
@@ -41,7 +10,7 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
     binary zip release. The packages themselves are not released by the Apache
     Software Foundation.
   </p>
-  <p>These installers include a local Java {{ page.jdk-version }} JDK for the IDE to run on,
+  <p>These installers include a local Java {{ site.data.nb28.jdk-version }} JDK for the IDE to run on,
     offering a self-contained out-of-the-box experience. Additional JDK's for projects
     may be registered and/or downloaded using <code>Tools / Java Platforms</code> in the
     IDE menu, supporting development of projects from Java 8 up.</p>
@@ -78,62 +47,62 @@ linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00
   <h2>Downloads</h2>
   <section class="download-arch">
     <h3>Windows (x86_64)</h3>
-    <div><a href="{{ page.downloadbase }}/{{ page.windows-exe-x64-file }}" 
+    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.windows-exe-x64-file }}" 
             class="btn"><i class="fa fa-windows"></i>
-        Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
+        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
         <span class="type-arch">(.exe x86_64)</span></a>
     </div>
     <aside>
-      <code class="hash">SHA256 : {{ page.windows-exe-x64-hash }}</code>
+      <code class="hash">SHA256 : {{ site.data.nb28.windows-exe-x64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>macOS (x86_64)</h3>
-    <div><a href="{{ page.macos-pkg-x64-link }}" 
+    <div><a href="{{ site.data.nb28.macos-pkg-x64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ page.netbeans-version }} + JDK {{ page.jdk-version }} -->
+        Apache NetBeans 27 + JDK 24 <!--{{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }} -->
         <span class="type-arch">(.pkg x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.macos-pkg-x64-hash }}</code>
+      <code class="hash">SHA256 : {{ site.data.nb28.macos-pkg-x64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>macOS (arm64)</h3>
-    <div><a href="{{ page.macos-pkg-arm64-link }}" 
+    <div><a href="{{ site.data.nb28.macos-pkg-arm64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ page.netbeans-version }} + JDK {{ page.jdk-version }} -->
+        Apache NetBeans 27 + JDK 24 <!--{{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }} -->
         <span class="type-arch">(.pkg arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.macos-pkg-arm64-hash }}</code>
+      <code class="hash">SHA256 : {{ site.data.nb28.macos-pkg-arm64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
-    <div><a href="{{ page.downloadbase }}/{{ page.linux-deb-x64-file }}" 
+    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.linux-deb-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
+        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
         <span class="type-arch">(.deb x86_64)</span></a></div>
-    <aside><code class="hash">SHA256 : {{ page.linux-deb-x64-hash }}</code><br>
+    <aside><code class="hash">SHA256 : {{ site.data.nb28.linux-deb-x64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
-    <div><a href="{{ page.downloadbase }}/{{ page.linux-rpm-x64-file }}" 
+    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.linux-rpm-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
+        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
         <span class="type-arch">(.rpm x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.linux-rpm-x64-hash }}</code><br>
+      <code class="hash">SHA256 : {{ site.data.nb28.linux-rpm-x64-hash }}</code><br>
       The .rpm package should be installed using the distribution software manager,
       or using eg. <code>sudo dnf install ./FILENAME</code>.
     </aside>
   </section>
   <section class="download-arch">
     <h3>Linux (arm64)</h3>
-    <div><a href="{{ page.downloadbase }}/{{ page.linux-deb-arm64-file }}" 
+    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.linux-deb-arm64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ page.netbeans-version }} + JDK {{ page.jdk-version }}
+        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
         <span class="type-arch">(.deb arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ page.linux-deb-arm64-hash }}</code><br>
+      <code class="hash">SHA256 : {{ site.data.nb28.linux-deb-arm64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.<br>
       If using this package on a Raspberry Pi, we recommend switching from Wayland to X11.</aside>
