@@ -2,7 +2,7 @@
 layout: page
 title: "Apache NetBeans 28 packages"
 ---
-
+{% assign sb = site.data.nb28 -%}
 <section>
   <p><a href="https://netbeans.apache.org">Apache NetBeans</a> packages / installers
     provided by Friends of Apache NetBeans (see <a href="#who">who we are</a>).
@@ -47,7 +47,7 @@ title: "Apache NetBeans 28 packages"
   <h2>Downloads</h2>
   <section class="download-arch">
     <h3>Windows (x86_64)</h3>
-    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.windows-exe-x64-file }}" 
+    <div><a href="{{ sb.downloadbase }}/{{ sb.windows-exe-x64-file }}" 
             class="btn"><i class="fa fa-windows"></i>
         Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
         <span class="type-arch">(.exe x86_64)</span></a>
@@ -58,51 +58,51 @@ title: "Apache NetBeans 28 packages"
   </section>
   <section class="download-arch">
     <h3>macOS (x86_64)</h3>
-    <div><a href="{{ site.data.nb28.macos-pkg-x64-link }}" 
+    <div><a href="{{ sb.macos-pkg-x64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }} -->
+        Apache NetBeans 27 + JDK 24 <!--{{ sb.netbeans-version }} + JDK {{ sb.jdk-version }} -->
         <span class="type-arch">(.pkg x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ site.data.nb28.macos-pkg-x64-hash }}</code>
+      <code class="hash">SHA256 : {{ sb.macos-pkg-x64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>macOS (arm64)</h3>
-    <div><a href="{{ site.data.nb28.macos-pkg-arm64-link }}" 
+    <div><a href="{{ sb.macos-pkg-arm64-link }}" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }} -->
+        Apache NetBeans 27 + JDK 24 <!--{{ sb.netbeans-version }} + JDK {{ sb.jdk-version }} -->
         <span class="type-arch">(.pkg arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ site.data.nb28.macos-pkg-arm64-hash }}</code>
+      <code class="hash">SHA256 : {{ sb.macos-pkg-arm64-hash }}</code>
     </aside>
   </section>
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
-    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.linux-deb-x64-file }}" 
+    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
+        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.deb x86_64)</span></a></div>
-    <aside><code class="hash">SHA256 : {{ site.data.nb28.linux-deb-x64-hash }}</code><br>
+    <aside><code class="hash">SHA256 : {{ sb.linux-deb-x64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
-    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.linux-rpm-x64-file }}" 
+    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-rpm-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
+        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.rpm x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ site.data.nb28.linux-rpm-x64-hash }}</code><br>
+      <code class="hash">SHA256 : {{ sb.linux-rpm-x64-hash }}</code><br>
       The .rpm package should be installed using the distribution software manager,
       or using eg. <code>sudo dnf install ./FILENAME</code>.
     </aside>
   </section>
   <section class="download-arch">
     <h3>Linux (arm64)</h3>
-    <div><a href="{{ site.data.nb28.downloadbase }}/{{ site.data.nb28.linux-deb-arm64-file }}" 
+    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-arm64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ site.data.nb28.netbeans-version }} + JDK {{ site.data.nb28.jdk-version }}
+        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.deb arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ site.data.nb28.linux-deb-arm64-hash }}</code><br>
+      <code class="hash">SHA256 : {{ sb.linux-deb-arm64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.<br>
       If using this package on a Raspberry Pi, we recommend switching from Wayland to X11.</aside>
