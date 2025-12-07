@@ -7,10 +7,10 @@ downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/
 windows-exe-x64-file: Apache-NetBeans-27.exe
 windows-exe-x64-hash: 6180e321d9897da4b47690eab67afbb431f413f82f2443107910766dabc1a935
 
-macos-pkg-x64-link: Apache-NetBeans-27-x86_64.pkg
+macos-pkg-x64-file: Apache-NetBeans-27-x86_64.pkg
 macos-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
 
-macos-pkg-arm64-link: Apache-NetBeans-27-arm64.pkg
+macos-pkg-arm64-file: Apache-NetBeans-27-arm64.pkg
 macos-pkg-arm64-hash: 1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d
 
 linux-deb-x64-file: apache-netbeans_27-1_amd64.deb
