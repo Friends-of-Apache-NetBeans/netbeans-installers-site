@@ -24,6 +24,17 @@ body {
   @include flex(none);
 }
 
+header.navigation::before {
+  content: "";
+  display:block;
+  position:absolute;
+  background-image: url(/assets/apache-netbeans.svg);
+  background-size: cover;
+  top: 3px;
+  width: 42px;
+  height: 48px;
+}
+
 main {
   display: block;
   @include flex(1 0 auto);
@@ -303,8 +314,11 @@ img {
 */
 .site-footer {
   width: 100%;
-  @include outer-container;
-  $link-color: black;
+  margin:0%;
+  // @include outer-container;
+  $link-color: white;
+  background-color:#333;
+  color: white;
   h2 {
     display: none;
   }

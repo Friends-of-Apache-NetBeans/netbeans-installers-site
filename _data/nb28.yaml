@@ -1,7 +1,6 @@
 netbeans-version: 28
 jdk-version: 25
-
-# patchMe
+page-title: Apache NetBeans 28
 
 downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1
 
@@ -22,5 +21,3 @@ linux-rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa
 
 linux-deb-arm64-file: apache-netbeans_28-1_arm64.deb
 linux-deb-arm64-hash: 96094e926c700f900a31fd0a33d7ccacecb1ae69674cc725d38466ab00fac371
-
-# /patchMe

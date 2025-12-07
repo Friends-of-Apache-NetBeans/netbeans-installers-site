@@ -1,22 +1,14 @@
 ---
 layout: page
-<!-- title: Apache NetBeans Latest Installer Packages -->
 ---
-{% assign latest = site.data.latest[0].latest -%}
-{% assign sb = site.data[latest] -%}
+{% assign sb = site.data[page.sb] -%}
+
 
 {%- include preamble.html -%}
 
-<section class="support">
-  <h2>This is a transitional installers release.</h2>
-  <p>We are in the transition of providing signed installers by Friends of Apache NetBeans ourselves. 
-    This implies that the macOS releases are postponed until further notice. Currently the links for macOS 
-    point to release 27.
-  </p>
-<section>
+
 <section class="downloads">
-  <h2>Downloads</h2>
-  <section class="download-arch">
+    <section class="download-arch">
     <h3>Windows (x86_64)</h3>
     <div><a href="{{ sb.downloadbase }}/{{ sb.windows-exe-x64-file }}" 
             class="btn"><i class="fa fa-windows"></i>
@@ -80,16 +72,4 @@ layout: page
   </section>
 </section>
 
-
-<section class="information">
-  <h2>Transitional releases</h2>
-  <p>Currently we are waiting for 
-    <ul>
-    <li style="text-decoration: line-through">A GlobalSign certificate naming Friends of Apache NetBeans.</li>
-    <li>Acceptance by Apple Developer support as FOSS publisher, so that we can sign and notarize the Apple macOS releases.</li>
-    </ul>
-    <p>As soon as either condition is completed, we will make the associated signed release available and replace the links with links to the 
-    signed release. 
-    </p>
-  </p>
-</section>
+{%- include who.html -%}

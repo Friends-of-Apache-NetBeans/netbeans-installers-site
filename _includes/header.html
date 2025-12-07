@@ -1,7 +1,13 @@
+{% if page.url == "/" %}
+{% assign latest = site.data.latest[0].latest -%}
+{% assign sb = site.data[latest] -%}
+{% else %}
+{%- assign sb = site.data[page.sb] -%}
+{% endif %}
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="{{ site.baseurl }}/" class="site-info">
-    <h1 class="site-title">{{ site.title }}</h1>
+    <h1 class="site-title">Apache NetBeans&nbsp;{{ sb.netbeans-version }}</h1>
     <!--<h2 class="site-subtitle">{{ site.subtitle }}</h2>-->
     </a>
     {% if site.data.nav %}

@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
-
+{%- if page.url == "/" %}
+{% assign latest = site.data.latest[0].latest -%}
+{% assign sb = site.data[latest] -%}
+{% else %}
+{%- assign sb = site.data[page.sb] -%}
+{% endif -%}
 <header id="content-header">
   <section id="page-title">
-    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+    <!-- <h1>{% if sb.page-title %}{{ sb.page-title }}{% else %}{{ site.title }}{% endif %}</h1> -->
   </section>
 </header>
+
 
 <section id="content">
   {{ content }}
