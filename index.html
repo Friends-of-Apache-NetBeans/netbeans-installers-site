@@ -2,10 +2,18 @@
 layout: page
 <!-- title: Apache NetBeans Latest Installer Packages -->
 ---
-{% assign latest = site.data.latest[0].latest -%}
-{% assign sb = site.data[latest] -%}
+{% # resolve / as latest %}
+{%- if page.url == "/" -%}
+  {%- for x in site.data reversed -%}
+  {%-    assign sb = x[0] -%}
+  {%-    break -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- assign sb = page.sb -%}
+{%- endif -%}
+ {%- assign sb = site.data[sb] -%}
 
-{%- include preamble.html -%}
+ {%- include preamble.html -%}
 
 <section class="support">
   <h2>This is a transitional installers release.</h2>

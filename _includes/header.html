@@ -1,39 +1,30 @@
-{% if page.url == "/" %}
-{% assign latest = site.data.latest[0].latest -%}
-{% assign sb = site.data[latest] -%}
-{% else %}
-{%- assign sb = site.data[page.sb] -%}
-{% endif %}
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="{{ site.baseurl }}/" class="site-info">
     <h1 class="site-title">Apache NetBeans&nbsp;{{ sb.netbeans-version }}</h1>
     <!--<h2 class="site-subtitle">{{ site.subtitle }}</h2>-->
     </a>
-    {% if site.data.nav %}
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
       <i class="fa fa-bars"></i>
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        {% for link in site.data.nav %}
-        <li class="nav-link{% if page.url == link.href %} active{% endif %}"><a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
-          {% endfor %}
-
-          {% if false %}
-          <!-- alternative social links in nav menu -->
-          {% for social in site.social %}
-          {% if social.url != null %}
-        <li class="nav-link social">
-          <a href="{{ social.url }}" title="{{ social.desc }}">
-            <i class="fa fa-{{ social.icon }}"></i>
-          </a>
-        </li>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
+        {%- assign i = false -%}
+        {%- for f in site.data reversed -%}
+            {%- if i!=true  -%}
+            {%-    assign href="/" -%}
+            {%-    assign title= "latest" -%}
+            {%- else -%}
+            {%-    assign title=f[0] -%}
+            {%-    capture href -%}
+                    /{{f[0]}}/
+            {%-    endcapture -%}
+            {%- endif -%}
+            {%- if page.url == href -%}{%- assign aclass=" active"%}{%else%}{%assign aclass=""%}{%endif-%}
+            <li class="nav-link{{aclass}}"><a href="{{href| prepend: site.baseurl}}">{{title }}</a></li>
+        {%- assign i = true -%}
+        {%- endfor -%}
       </ul>
     </nav>
-    {% endif %}
   </div>
 </header>

@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {%- include head.html -%} 
 
-  {% assign section = page.url | split: '/' %}
+  {%- assign section = page.url | split: '/' -%} 
   
-  <body class="{% if section[1] %}{{section[1]}}{% else %}front{% endif %}{% if page.main_image_path %} has-cover{% endif %}">
+  <body class="{%- if section[1] -%} {{section[1]}}{%- else -%} front{%- endif -%} {%- if page.main_image_path -%}  has-cover{%- endif -%} ">
     
-    {% include header.html %}
+    {%- include header.html -%} 
 
     <main role="main">
-        {{ content }}
+        {{content }}
     </main>
 
-    {% include footer.html %}
+    {% include footer.html %} 
 
+    <div>
+      <ul>
+      </ul>
+    </div>
   </body>
 
 </html>
