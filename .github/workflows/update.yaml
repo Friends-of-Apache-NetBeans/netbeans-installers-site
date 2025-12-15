@@ -1,0 +1,30 @@
+# publish release to netbeans-installers-site
+name: Update
+on: 
+  workflow_dispatch:
+
+jobs:
+  UpdateWeb:
+    name: Checkout this repo and website 
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: create-web-files
+        run: |
+          gh release download -D _data --clobber -p "nb*.yaml"
+          lastyaml=$(ls -rt _data/nb*.yaml | head -1)
+          nbversion=$(cat $lastyaml | grep netbeans-version | cut -d: -f2 | xargs)
+          cat - <<EOF > nb${nbversion}.md
+          ---
+          layout: release
+          sb: nb${nbversion}
+          ---
+          EOF
+          git add $lastyaml 
+          git commit -m"update website for publication"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          
+
