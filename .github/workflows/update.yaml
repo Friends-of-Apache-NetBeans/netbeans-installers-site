@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
       - name: create-web-files
         run: |
           gh release download -R Friends-of-Apache-NetBeans/netbeans-installers -D _data --clobber -p "nb*.yaml"
@@ -21,10 +24,11 @@ jobs:
           sb: nb${nbversion}
           ---
           EOF
-          git add $lastyaml nb${nbversion}.md
-          git commit -m"update website for publication"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-          
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+                
 
