@@ -16,12 +16,7 @@ jobs:
           gh release download -R Friends-of-Apache-NetBeans/netbeans-installers -D _data --clobber -p "nb*.yaml"
           lastyaml=$(ls -rt _data/nb*.yaml | head -1)
           nbversion=$(cat $lastyaml | grep netbeans-version | cut -d: -f2 | xargs)
-          cat - <<EOF > nb${nbversion}.md
-          ---
-          layout: release
-          sb: nb${nbversion}
-          ---
-          EOF
+          echo -e "---\nlayout: release\nsb: nb${nbversion}\n---" >nb${nbversion}.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git status 
