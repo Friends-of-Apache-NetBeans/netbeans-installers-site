@@ -10,11 +10,7 @@ jobs:
     permissions: 
       contents: write
     steps:
-      - name: checkout
-        uses: actions/checkout@v6
-        with:
-          persist-credentials: false
-          fetch-depth: 0
+      - uses: actions/checkout@v6
       - name: create-web-files
         run: |
           gh release download -R Friends-of-Apache-NetBeans/netbeans-installers -D _data --clobber -p "nb*.yaml"
