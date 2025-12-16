@@ -24,8 +24,9 @@ jobs:
           EOF
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git status 
           git add .
-          git commit -m "added nb${version} on $(date)"
+          git commit -m "added nb${nbversion} on $(date)"
           git push
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
