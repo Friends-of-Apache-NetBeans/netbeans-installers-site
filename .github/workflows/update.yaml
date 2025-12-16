@@ -20,7 +20,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git status 
-          git add .
+          git add nb${nbversion}.md ${lastyaml}
           git commit -m "added nb${nbversion} on $(date)"
           git push
         env:
