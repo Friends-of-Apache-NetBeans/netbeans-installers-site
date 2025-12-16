@@ -17,9 +17,9 @@ jobs:
           lastyaml=$(ls -rt _data/nb*.yaml | head -1)
           nbversion=$(cat $lastyaml | grep netbeans-version | cut -d: -f2 | xargs)
           echo -e "---\nlayout: release\nsb: nb${nbversion}\n---" >nb${nbversion}.md
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git status 
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git status > $GITHUB_OUTPUT
           git add nb${nbversion}.md ${lastyaml}
           git commit -m "added nb${nbversion} on $(date)"
           git push
