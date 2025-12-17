@@ -14,7 +14,7 @@ jobs:
       - name: create-web-files
         run: |
           gh release download -R Friends-of-Apache-NetBeans/netbeans-installers -D _data --clobber -p "nb*.yaml"
-          lastyaml=$(ls -rt _data/nb*.yaml | head -1)
+          lastyaml=$(ls -t _data/nb*.yaml | head -1)
           nbversion=$(cat $lastyaml | grep netbeans-version | cut -d: -f2 | xargs)
           echo -e "---\nlayout: release\nsb: nb${nbversion}\n---" > ./nb${nbversion}.md
           git config --global user.name "github-actions[bot]"
