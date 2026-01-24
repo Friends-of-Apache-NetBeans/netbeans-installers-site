@@ -18,27 +18,8 @@ layout: page
     </aside>
   </section>
   <section class="download-arch">
-    <h3>macOS (x86_64)</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.macos-pkg-x64-file }}" 
-            class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ sb.netbeans-version }} + JDK {{ sb.jdk-version }} -->
-        <span class="type-arch">(.pkg x86_64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.macos-pkg-x64-hash }}</code>
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>macOS (arm64)</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.macos-pkg-arm64-file }}" 
-            class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ sb.netbeans-version }} + JDK {{ sb.jdk-version }} -->
-        <span class="type-arch">(.pkg arm64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.macos-pkg-arm64-hash }}</code>
-    </aside>
-  </section>
-  <section class="download-arch">
     <h3>Linux (x86_64)</h3>
+    <h4>Debain based (Ubuntu, Mint, etc)</h4>
     <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
@@ -46,6 +27,7 @@ layout: page
     <aside><code class="hash">SHA256 : {{ sb.linux-deb-x64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
+    <h4>Red Hat and Friends (RedHat, Fedora, Suse, etc)</h4>
     <div><a href="{{ sb.downloadbase }}/{{ sb.linux-rpm-x64-file }}" 
             class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
