@@ -3,100 +3,22 @@ layout: page
 <!-- title: Apache NetBeans Latest Installer Packages -->
 ---
 {%- if page.url == "/" -%}
-  {%- for x in site.data reversed -%}
-  {%-    assign sb = x[0] -%}
-  {%-    break -%}
-  {%- endfor -%}
+{%- for x in site.data reversed -%}
+{%- assign sb = x[0] -%}
+{%- break -%}
+{%- endfor -%}
 {%- else -%}
-  {%- assign sb = page.sb -%}
+{%- assign sb = page.sb -%}
 {%- endif -%}
- {%- assign sb = site.data[sb] -%}
+{%- assign sb = site.data[sb] -%}
 
- {%- include preamble.html -%}
+{%- include preamble.html -%}
 
 <section class="support">
   <h2>This is a transitional installers release.</h2>
-  <p>We are in the transition of providing signed installers by Friends of Apache NetBeans ourselves. 
-    This implies that the macOS releases are postponed until further notice. Currently the links for macOS 
-    point to release 27.
+  <p>We are in the transition of providing signed installers by Friends of Apache NetBeans ourselves.
+    This implies that the macOS releases are postponed until further notice.
   </p>
-<section>
-<section class="downloads">
-  <h2>Downloads</h2>
-  <section class="download-arch">
-    <h3>Windows (x86_64)</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.windows-exe-x64-file }}" 
-            class="btn"><i class="fa fa-windows"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.exe x86_64)</span></a>
-    </div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.windows-exe-x64-hash }}</code>
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>macOS (x86_64)</h3>
-    <div><a href="{{ sb.macos-pkg-x64-link }}" 
-            class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ sb.netbeans-version }} + JDK {{ sb.jdk-version }} -->
-        <span class="type-arch">(.pkg x86_64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.macos-pkg-x64-hash }}</code>
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>macOS (arm64)</h3>
-    <div><a href="{{ sb.macos-pkg-arm64-link }}" 
-            class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 27 + JDK 24 <!--{{ sb.netbeans-version }} + JDK {{ sb.jdk-version }} -->
-        <span class="type-arch">(.pkg arm64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.macos-pkg-arm64-hash }}</code>
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>Linux (x86_64)</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-x64-file }}" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.deb x86_64)</span></a></div>
-    <aside><code class="hash">SHA256 : {{ sb.linux-deb-x64-hash }}</code><br>
-      The .deb package should be installed using the distribution software manager,
-      or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-rpm-x64-file }}" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.rpm x86_64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.linux-rpm-x64-hash }}</code><br>
-      The .rpm package should be installed using the distribution software manager,
-      or using eg. <code>sudo dnf install ./FILENAME</code>.
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>Linux (arm64)</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-arm64-file }}" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.deb arm64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.linux-deb-arm64-hash }}</code><br>
-      The .deb package should be installed using the distribution software manager,
-      or using eg. <code>sudo dpkg -i FILENAME</code>.<br>
-      If using this package on a Raspberry Pi, we recommend switching from Wayland to X11.</aside>
-  </section>
-</section>
+  <section>
+    {%- include release.html -%}
 
-
-<section class="information">
-  <h2>Transitional releases</h2>
-  <p>Currently we are waiting for 
-    <ul>
-    <li style="text-decoration: line-through">A GlobalSign certificate naming Friends of Apache NetBeans.</li>
-    <li>Acceptance by Apple Developer support as FOSS publisher, so that we can sign and notarize the Apple macOS releases.</li>
-    </ul>
-    <p>As soon as either condition is completed, we will make the associated signed release available and replace the links with links to the 
-    signed release. 
-    </p>
-  </p>
-</section>

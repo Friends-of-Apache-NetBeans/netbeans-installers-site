@@ -5,8 +5,8 @@ jdk-version: 25.0.2
 linux-rpm-x64-file: apache-netbeans-29~rc1-0.x86_64.rpm
 linux-rpm-x64-hash: 6822b73f16966e21c7d3193bcbbea57cda6cbc6a8409b4f92e57869599f8e7d6
 
-macos-pkg-x64-file: Apache-NetBeans-29-rc1-x86_64.pkg
-macos-pkg-x64-hash: 914fdfa9a5a7228cd22656bf9169e39cd52da3a895025a9fd04d8518620e6d2c
+# macos-pkg-x64-file: Apache-NetBeans-29-rc1-x86_64.pkg
+# macos-pkg-x64-hash: 914fdfa9a5a7228cd22656bf9169e39cd52da3a895025a9fd04d8518620e6d2c
 
 windows-exe-x64-file: Apache-NetBeans-29-rc1.exe
 windows-exe-x64-hash: 9e9da43ca06f8b00ace9a241d087ab13e46d714e6e1b0823d4a48011f2397b94
@@ -14,8 +14,8 @@ windows-exe-x64-hash: 9e9da43ca06f8b00ace9a241d087ab13e46d714e6e1b0823d4a48011f2
 linux-deb-arm-file: apache-netbeans_29~rc1-1_arm64.deb
 linux-deb-arm-hash: 692d168b1c687a042aba08e4c1aaab79d011706ab2a00340fb849793da0d2512
 
-macos-pkg-arm-file: Apache-NetBeans-29-rc1-arm64.pkg
-macos-pkg-arm-hash: 0fd1b6f8840d92d5c44347d6380dbeffbf9e28048eb3d7f802e704498d6d663c
+# macos-pkg-arm-file: Apache-NetBeans-29-rc1-arm64.pkg
+# macos-pkg-arm-hash: 0fd1b6f8840d92d5c44347d6380dbeffbf9e28048eb3d7f802e704498d6d663c
 
 linux-deb-x64-file: apache-netbeans_29~rc1-1_amd64.deb
 linux-deb-x64-hash: ea6b64e44c866f8e15524c0874686db987daa82da46fb0d63a0ee9033a8b0683

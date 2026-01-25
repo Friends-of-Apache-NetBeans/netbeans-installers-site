@@ -5,51 +5,6 @@ layout: page
 
 {%- include preamble.html -%}
 
-<section class="downloads">
-    <section class="download-arch">
-    <h3>Windows (x86_64)</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.windows-exe-x64-file }}" 
-            class="btn"><i class="fa fa-windows"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.exe x86_64)</span></a>
-    </div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.windows-exe-x64-hash }}</code>
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>Linux (x86_64)</h3>
-    <h4>Debain based (Ubuntu, Mint, etc)</h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-x64-file }}" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.deb x86_64)</span></a></div>
-    <aside><code class="hash">SHA256 : {{ sb.linux-deb-x64-hash }}</code><br>
-      The .deb package should be installed using the distribution software manager,
-      or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
-    <h4>Red Hat and Friends (RedHat, Fedora, Suse, etc)</h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-rpm-x64-file }}" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.rpm x86_64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.linux-rpm-x64-hash }}</code><br>
-      The .rpm package should be installed using the distribution software manager,
-      or using eg. <code>sudo dnf install ./FILENAME</code>.
-    </aside>
-  </section>
-  <section class="download-arch">
-    <h3>Linux (arm64) Debian based  (Ubuntu, Mint, Raspberry-OS, etc) package</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-arm64-file }}" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.deb arm64)</span></a></div>
-    <aside>
-      <code class="hash">SHA256 : {{ sb.linux-deb-arm64-hash }}</code><br>
-      The .deb package should be installed using the distribution software manager,
-      or using eg. <code>sudo dpkg -i FILENAME</code>.<br>
-      If using this package on a Raspberry Pi, we recommend switching from Wayland to X11.</aside>
-  </section>
-</section>
+{%- include release.html -%}
 
 {%- include who.html -%}
