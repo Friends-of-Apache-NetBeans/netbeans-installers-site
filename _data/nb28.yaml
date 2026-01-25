@@ -3,8 +3,8 @@ jdk-version: 25.0.1
 
 downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build1
 
-macos-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
-macos-pkg-x64-file: Apache-NetBeans-27-x86_64.pkg
+# macos-pkg-x64-hash: 7552a2a365e828bcf40ebddd561c75ed10542474b9329f5412aded6bab437dd8
+# macos-pkg-x64-file: Apache-NetBeans-27-x86_64.pkg
 
 linux-rpm-x64-file: apache-netbeans-28-0.x86_64.rpm
 linux-rpm-x64-hash: 961e3077b87ec75cd50cc5c29c78add1bb22e0430c610b669d9a18470efa47f5
