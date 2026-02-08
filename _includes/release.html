@@ -54,12 +54,13 @@
   {%- endif -%}
   {%- if sb.macos-pkg-x64-hash -%}
   <section class="download-arch">
-    <h3>Apple macOS</h3>
+    <h3>Apple macOS for Intel Silicon</h3>
     <div><a href="{{ sb.downloadbase }}/{{ sb.macos-pkg-x64-file }}" class="btn"><i class="fa fa-apple"></i>
         {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.pkg x86_64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ sb.macos-pkg-x64-hash }}</code>
+      <code class="hash">SHA256 : {{ sb.macos-pkg-x64-hash }}</code><br>
+      The .pkg package can be installed by clicking on the downloaded file or by open &tt;file&gt;.
     </aside>
   </section>
   {%- else -%}
@@ -72,13 +73,15 @@
   {%- endif -%}
   {%- if sb.macos-pkg-arm-hash -%}
   <section class="download-arch">
-    <h3>Apple macOS</h3>
+    <h3>Apple macOS for Apple Silicon</h3>
     <h4>Apple Silicon (M2, M3, M4, etc)</h4>
     <div><a href="{{ sb.downloadbase }}/{{ sb.macos-pkg-arm-file }}" class="btn"><i class="fa fa-apple"></i>
         {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.pkg arm64)</span></a></div>
     <aside>
-      <code class="hash">SHA256 : {{ sb.macos-pkg-arm-hash }}</code>
+      <code class="hash">SHA256 : {{ sb.macos-pkg-arm-hash }}</code><br>
+      The .pkg package can be installed by clicking on the downloaded file or by open &tt;file&gt;.
+
     </aside>
   </section>
   {%- endif -%}
