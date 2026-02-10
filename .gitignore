@@ -1,6 +1,6 @@
 # Compiled site
 _site
-
+dist/
 # Caches
 .sass-cache/
 .jekyll-cache/
@@ -12,3 +12,6 @@ Gemfile.lock
 
 # IDE
 nbproject/
+
+# backup by editors
+*~

@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: create-web-files
         run: |
-          gh release download ${{ inputs.release_tag }} -R Friends-of-Apache-NetBeans/netbeans-installers -D _data --clobber -p "nb*.yaml"
+          gh release download ${{ inputs.release_tag }} -R Friends-of-Apache-NetBeans/netbeans-installers -D dist --clobber -p '*.yaml' -p "*.properties"
           lastyaml=$(ls -t _data/nb*.yaml | head -1)
           nbversion=$(cat $lastyaml | grep netbeans-version | cut -d: -f2 | xargs)
           echo -e "---\nlayout: release\nsb: nb${nbversion}\n---" > ./nb${nbversion}.md

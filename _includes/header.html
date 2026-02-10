@@ -10,10 +10,10 @@
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
         {%- assign i = false -%}
-        {%- for f in site.data reversed -%}
+        {%- for f in site.data -%}
             {%- if i!=true  -%}
             {%-    assign href="/" -%}
-            {%-    assign title= "latest" -%}
+            {%-    assign title= f[0] -%}
             {%- else -%}
             {%-    assign title=f[0] -%}
             {%-    capture href -%}
@@ -21,7 +21,7 @@
             {%-    endcapture -%}
             {%- endif -%}
             {%- if page.url == href -%}{%- assign aclass=" active"%}{%else%}{%assign aclass=""%}{%endif-%}
-            <li class="nav-link{{aclass}}"><a href="{{href| prepend: site.baseurl}}">{{title }}</a></li>
+            <li class="nav-link{{aclass}}"><a href="{{href| prepend: site.baseurl}}">{{ title | replace_first: 'rc', ''  }}</a></li>
         {%- assign i = true -%}
         {%- endfor -%}
       </ul>

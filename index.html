@@ -1,9 +1,9 @@
 ---
 layout: page
-<!-- title: Apache NetBeans Latest Installer Packages -->
+title: Apache NetBeans Latest Installer Packages
 ---
 {%- if page.url == "/" -%}
-{%- for x in site.data reversed -%}
+{%- for x in site.data -%}
 {%- assign sb = x[0] -%}
 {%- break -%}
 {%- endfor -%}
@@ -14,11 +14,5 @@ layout: page
 
 {%- include preamble.html -%}
 
-<section class="support">
-  <h2>This is a transitional installers release.</h2>
-  <p>We are in the transition of providing signed installers by Friends of Apache NetBeans ourselves.
-    This implies that the macOS releases are postponed until further notice.
-  </p>
-  <section>
-    {%- include release.html -%}
+{%- include release.html -%}
 
