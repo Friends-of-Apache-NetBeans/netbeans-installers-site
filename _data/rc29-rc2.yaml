@@ -4,10 +4,10 @@ downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/
 linux-rpm-x64-file: apache-netbeans-29~rc2-0.x86_64.rpm
 linux-rpm-x64-hash: f6773acffd66ee4d9b6c192e26425acfc990892280c68ef970cd274b9076dd4b
 
-linux-deb-x64-file: apache-netbeans_29~rc2-1_amd64.deb
+linux-deb-x64-file: apache-netbeans_29-rc2-1_amd64.deb
 linux-deb-x64-hash: 14999325b26e523a85239f6c057270830523a8e0734c73ef12c2c85210ebbb95
 
-linux-deb-arm-file: apache-netbeans_29~rc2-1_arm64.deb
+linux-deb-arm-file: apache-netbeans_29-rc2-1_arm64.deb
 linux-deb-arm-hash: 8e983852396c82a33322cd88f660a9b93859a77dce7c1a98933299d93bffd28a
 
 macos-pkg-arm-file: Apache-NetBeans-29-rc2-arm64.pkg
