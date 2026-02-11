@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 release_tag=$1
-
-gh release download --clobber ${release_tag} -R Friends-of-Apache-NetBeans/netbeans-installers -p '*.yaml' -p '*.properties' -D dist
+rm -rf dist
+mkdir -p dist
+gh release download --clobber ${release_tag} -R Friends-of-Apache-NetBeans/netbeans-installers -D dist -p build.properties
+gh release view -R Friends-of-Apache-NetBeans/netbeans-installers ${release_tag} --json assets |\
+    jq  '.assets[] | .name +";"+.url+";"+.digest' | sed -e 's/"//g' | grep -v yaml | grep -v properties > dist/assets.txt
 
 nb_release=$(cat dist/build.properties | grep netbeans.version | cut -d= -f2)
 jdkversion=$(cat dist/build.properties | grep jdk.version | cut -d= -f2)
-downloadbase=https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/${release_tag}
 
 if [[ ${nb_release} =~ .*rc*. ]]; then
     echo release candidate ${nb_release}
@@ -29,15 +31,8 @@ fi
 
 rm -f ${datafile}
 ## old version of attach created a nbxx.yaml file which should not be used anymore.
-rm -f dist/nb*.yaml
 
-cat - <<EOF > ${datafile}
-netbeans-version: ${nb_release}
-jdk-version: ${jdkversion}
-downloadbase: ${downloadbase}
-EOF
-
-cat dist/*.yaml >> ${datafile}
+java ProcessAssets.java >> ${datafile}
 
 
 
