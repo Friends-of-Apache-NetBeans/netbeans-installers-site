@@ -15,6 +15,11 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v6
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: 'zulu'
       - name: create-web-files
         run: |
           ./doUpdate ${{ inputs.release_tag }}
