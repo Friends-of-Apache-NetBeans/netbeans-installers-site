@@ -3,7 +3,7 @@
   <section class="download-arch">
     <h3>MicroSoft Windows</h3>
     <h4>Intel/AMD (X64) </h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.windows-exe-x64-file }}" class="btn"><i class="fa fa-windows"></i>
+    <div><a href="{{ sb.windows-exe-x64-url }}" class="btn"><i class="fa fa-windows"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.exe x86_64)</span></a>
     </div>
@@ -16,7 +16,7 @@
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
     <h4>Debain based (Ubuntu, Mint, etc)</h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-x64-file }}" class="btn"><i class="fa fa-linux"></i>
+    <div><a href="{{ sb.linux-deb-x64-url }}" class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.deb x86_64)</span></a></div>
     <aside><code class="hash">SHA256 : {{ sb.linux-deb-x64-hash }}</code><br>
@@ -27,7 +27,7 @@
   {%- if sb.linux-rpm-x64-hash -%}
   <section class="download-arch">
     <h4>Red Hat and Friends (RedHat, Fedora, Suse, etc)</h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-rpm-x64-file }}" class="btn"><i class="fa fa-linux"></i>
+    <div><a href="{{ sb.linux-rpm-x64-url }}" class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.rpm x86_64)</span></a></div>
     <aside>
@@ -41,7 +41,7 @@
   <section class="download-arch">
     <h3>Linux (arm64) </h3>
     <h4>Debian based (Ubuntu, Mint, Raspberry-OS, etc) package</h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.linux-deb-arm-file }}" class="btn"><i class="fa fa-linux"></i>
+    <div><a href="{{ sb.linux-deb-arm-url }}" class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.deb arm64)</span></a></div>
     <aside>
@@ -55,7 +55,7 @@
   {%- if sb.macos-pkg-x64-hash -%}
   <section class="download-arch">
     <h3>Apple macOS for Intel Silicon</h3>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.macos-pkg-x64-file }}" class="btn"><i class="fa fa-apple"></i>
+    <div><a href="{{ sb.macos-pkg-x64-url }}" class="btn"><i class="fa fa-apple"></i>
         {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.pkg x86_64)</span></a></div>
     <aside>
@@ -76,7 +76,7 @@
   <section class="download-arch">
     <h3>Apple macOS for Apple Silicon</h3>
     <h4>Apple Silicon (M2, M3, M4, etc)</h4>
-    <div><a href="{{ sb.downloadbase }}/{{ sb.macos-pkg-arm-file }}" class="btn"><i class="fa fa-apple"></i>
+    <div><a href="{{ sb.macos-pkg-arm-url }}" class="btn"><i class="fa fa-apple"></i>
         {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
         <span class="type-arch">(.pkg arm64)</span></a></div>
     <aside>

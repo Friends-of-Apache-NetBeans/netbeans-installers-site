@@ -1,22 +1,27 @@
-downloadbase: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2
 netbeans-version: 28
 jdk-version: 25.0.2
 
 linux-rpm-x64-file: apache-netbeans-28-0.x86_64.rpm
+linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/apache-netbeans-28-0.x86_64.rpm
 linux-rpm-x64-hash: 668c22cf9b198582477e7cb9a613ea6d453fe57f09a1a0ffa423acd49054ea1a
 
+macos-pkg-arm-file: Apache-NetBeans-28-arm64.pkg
+macos-pkg-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/Apache-NetBeans-28-arm64.pkg
+macos-pkg-arm-hash: 7c64cfa68c064d54f750102aa0590c65d4062e829ea33d9dbceb867b06c2c886
+
 macos-pkg-x64-file: Apache-NetBeans-28-x86_64.pkg
+macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/Apache-NetBeans-28-x86_64.pkg
 macos-pkg-x64-hash: fc9976c8b55e1a81586d77c3b26d342c16f5912b4e385d8ea9e57294218f297e
 
 windows-exe-x64-file: Apache-NetBeans-28.exe
+windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/Apache-NetBeans-28.exe
 windows-exe-x64-hash: 893b21e6ff4eb99c0171845e4c2af15faa6f3ae34687a4ec2e1cffe14c5fb72f
 
-linux-deb-arm-file: apache-netbeans_28-1_arm64.deb
-linux-deb-arm-hash: cc46a0a645f55b529ff59156cfb20fc3b7958d0c121847dbce313e6bef1e403e
-
-macos-pkg-arm-file: Apache-NetBeans-28-arm64.pkg
-macos-pkg-arm-hash: 7c64cfa68c064d54f750102aa0590c65d4062e829ea33d9dbceb867b06c2c886
-
 linux-deb-x64-file: apache-netbeans_28-1_amd64.deb
+linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/apache-netbeans_28-1_amd64.deb
 linux-deb-x64-hash: d54897dba115b08cd49f75af2aa165b412bce126577989da7e7e15f3d4ffd795
+
+linux-deb-arm-file: apache-netbeans_28-1_arm64.deb
+linux-deb-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/apache-netbeans_28-1_arm64.deb
+linux-deb-arm-hash: cc46a0a645f55b529ff59156cfb20fc3b7958d0c121847dbce313e6bef1e403e
 
