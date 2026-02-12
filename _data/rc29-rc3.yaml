@@ -1,6 +1,14 @@
 netbeans-version: 29-rc3
 jdk-version: 25.0.2
 
+macos-pkg-arm-file: Apache-NetBeans-29-rc3-arm64.pkg
+macos-pkg-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-rc3-build1/Apache-NetBeans-29-rc3-arm64.pkg
+macos-pkg-arm-hash: 41d72701fe5dd5061ddb1b85cc7c5e461155f03d8042e6b05de963e3f0d663ad
+
+macos-pkg-x64-file: Apache-NetBeans-29-rc3-x86_64.pkg
+macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-rc3-build1/Apache-NetBeans-29-rc3-x86_64.pkg
+macos-pkg-x64-hash: 69f13e438d0a23ad812853125bf0cc72156028d3df450a6fffd953dbfc500e58
+
 windows-exe-x64-file: Apache-NetBeans-29-rc3.exe
 windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-rc3-build1/Apache-NetBeans-29-rc3.exe
 windows-exe-x64-hash: 0855250e1484da03404f4f7048179ed5e935001fbab049cadb27bffd18b514be
