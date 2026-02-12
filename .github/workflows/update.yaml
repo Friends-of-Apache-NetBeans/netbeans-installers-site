@@ -4,7 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: "the release tag the release artifacts should be attached to, example v29-rc1 or v29"
+        description: |
+          the release tag the release artifacts should be attached to, 
+          example v29-rc1-build2 or v29-build1
+
         type: string
 
 jobs:
