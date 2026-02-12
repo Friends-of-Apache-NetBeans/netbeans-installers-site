@@ -22,7 +22,7 @@ jobs:
           distribution: 'zulu'
       - name: create-web-files
         run: |
-          ./doUpdate ${{ inputs.release_tag }}
+          ./doUpdate.sh ${{ inputs.release_tag }}
           if [[ $(git status --porcelain)  ]]; then
             git config --global user.name "github-actions[bot]"
             git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
