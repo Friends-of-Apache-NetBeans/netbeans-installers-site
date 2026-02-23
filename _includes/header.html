@@ -10,7 +10,7 @@
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
         {%- assign i = false -%}
-        {%- for f in site.data -%}
+        {%- for f in site.data reversed -%}
             {%- if i!=true  -%}
             {%-    assign href="/" -%}
             {%-    assign title= f[0] -%}
