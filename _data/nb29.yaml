@@ -1,0 +1,27 @@
+netbeans-version: 29
+jdk-version: 25.0.2
+
+linux-rpm-x64-file: apache-netbeans-29-0.x86_64.rpm
+linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/apache-netbeans-29-0.x86_64.rpm
+linux-rpm-x64-hash: 920857d435672d1b3cac791e937b631e0c6279c14c4a87e9c77a8456971fd93d
+
+macos-pkg-arm-file: Apache-NetBeans-29-arm64.pkg
+macos-pkg-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg
+macos-pkg-arm-hash: 5a3dcad4edc2a327b7ef25f0c299060f41879f2ca482e27281700ae9ee14e776
+
+macos-pkg-x64-file: Apache-NetBeans-29-x86_64.pkg
+macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-x86_64.pkg
+macos-pkg-x64-hash: 6c51c350d60542ad832a387314469e65aee637c054bdcd443bfb69346432eb05
+
+windows-exe-x64-file: Apache-NetBeans-29.exe
+windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29.exe
+windows-exe-x64-hash: 152531686f53d9af24d41172576c5fb780b9054e027ed38b496b1a7aefa3baa4
+
+linux-deb-x64-file: apache-netbeans_29-1_amd64.deb
+linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/apache-netbeans_29-1_amd64.deb
+linux-deb-x64-hash: c2b9f2d1442d29795ed9b5d2d4b2b561eb58ac4805ed655c74ceab57d97bbc30
+
+linux-deb-arm-file: apache-netbeans_29-1_arm64.deb
+linux-deb-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/apache-netbeans_29-1_arm64.deb
+linux-deb-arm-hash: d7691c37d40a84c2f204ec67acdeba1e7438c8c17fe763e564d9cb4733037270
+
