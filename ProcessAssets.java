@@ -9,6 +9,17 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+/**
+ * Parse the build properties file.
+ * Build properties and and yaml files differ in allowed syntax.
+ * Also, not all properties are relevant.
+ * 
+ * For the general properties, in particular jdk info, replace dost with dashes.
+ * 
+ * For the various binaries, map the package extension and os/arch info to yaml properties.
+ * 
+ */
+
 class ProcessAssets {
 
     public static void main(String... argv) throws IOException {
@@ -19,11 +30,9 @@ class ProcessAssets {
         List<String> lines = Files.readAllLines(path);
         for (String line : lines) {
             String[] parts = line.split(";");
-//            System.out.println("parts[0] = " + parts[0]);
             Matcher m = pattern.matcher(parts[0]);
             String installer = null;
             if (m.matches()) {
-//                System.out.println("m = " + m.groupCount());
                 String installerMatch = m.group("installerType");
                 String archMatch = switch (m.group("arch")) {
                     case "x86_64" ->
@@ -35,7 +44,6 @@ class ProcessAssets {
                     default ->
                         "unknown";
                 };
-//                System.out.println("archMatch = " + archMatch);
                 installer = switch (installerMatch) {
                     case "exe" ->
                         "windows-exe-x64";
@@ -83,6 +91,10 @@ class ProcessAssets {
 
         System.out.println("netbeans-version: " + props.get("netbeans.version"));
         System.out.println("jdk-version: " + props.get("jdk.version"));
+        System.out.println("jdk-vendor: " + props.get("jdk.vendor"));
+        System.out.println("jdk-releasenotes-link: " + props.get("jdk.releasenotes.link"));
+        System.out.println("jdk-trademark-line: " + props.get("jdk.trademark.line"));
+        System.out.println("jdk-main-downloadpage: " + props.get("jdk.maindownloadpage"));
         System.out.println("");
     }
 }
