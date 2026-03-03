@@ -68,6 +68,10 @@ class ProcessAssets {
             String sha = parts[2].split(":")[1];
             System.out.println(installer
                     + "-hash: " + sha);
+            String downloads = parts[3];
+            System.out.println(installer
+                    + "-downloads: " + downloads);
+                
             System.out.println("");
         }
     }
