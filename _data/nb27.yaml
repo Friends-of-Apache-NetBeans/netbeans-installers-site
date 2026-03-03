@@ -2,7 +2,7 @@ netbeans-version: 27
 jdk-version: 25.0.2
 jdk-vendor: Azul Zulu
 jdk-releasenotes-link: https://docs.azul.com/core/release-notes
-jdk-trademark-line: Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc. Puk
+jdk-trademark-line: Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc.
 jdk-main-downloadpage: https://www.azul.com/downloads/
 
 linux-rpm-x64-file: apache-netbeans-27-0.x86_64.rpm
