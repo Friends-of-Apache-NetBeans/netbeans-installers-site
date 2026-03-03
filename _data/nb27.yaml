@@ -1,0 +1,31 @@
+netbeans-version: 27
+jdk-version: 25.0.2
+jdk-vendor: Azul Zulu
+jdk-releasenotes-link: https://docs.azul.com/core/release-notes
+jdk-trademark-line: Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc. Puk
+jdk-main-downloadpage: https://www.azul.com/downloads/
+
+linux-rpm-x64-file: apache-netbeans-27-0.x86_64.rpm
+linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/apache-netbeans-27-0.x86_64.rpm
+linux-rpm-x64-hash: d8deb1947cc00732ebdf1de6c65afb2ddab5f90ca4cf60853a17685080a02c63
+
+macos-pkg-arm-file: Apache-NetBeans-27-arm64.pkg
+macos-pkg-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/Apache-NetBeans-27-arm64.pkg
+macos-pkg-arm-hash: c22a09a2ce5e2a9431888ee9c19158e24aa2881ce2d53820581d47abfe5570c6
+
+macos-pkg-x64-file: Apache-NetBeans-27-x86_64.pkg
+macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/Apache-NetBeans-27-x86_64.pkg
+macos-pkg-x64-hash: 515c4033c8f4553e50457279837fa5062217f2d16a996aa3a4c53f8abd20f520
+
+windows-exe-x64-file: Apache-NetBeans-27.exe
+windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/Apache-NetBeans-27.exe
+windows-exe-x64-hash: 14cc18e5bb45aecbc29cdc222c5d32b2bff8a100728672138651950c1151513b
+
+linux-deb-x64-file: apache-netbeans_27-1_amd64.deb
+linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/apache-netbeans_27-1_amd64.deb
+linux-deb-x64-hash: baadbd51cac76c9e5e1b7738850d2906a559b9eb807c3dae4141f349cdc3c1af
+
+linux-deb-arm-file: apache-netbeans_27-1_arm64.deb
+linux-deb-arm-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/apache-netbeans_27-1_arm64.deb
+linux-deb-arm-hash: 1c164647897a53284e9828fcd5953e512e3b9d06129f0f9b14aff05e728e2b7c
+
