@@ -24,4 +24,4 @@
   linux-deb-arm64-file: apache-netbeans_29-1_zulu-25_arm64.deb
   linux-deb-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-25/apache-netbeans_29-1_zulu-25_arm64.deb
   linux-deb-arm64-hash: 025e88b9f1036f7aea67de40d93fb7d4ce17befe8e52fd29108f79a6593b9981
-  linux-deb-arm64-downloads: 0
+  linux-deb-arm64-downloads: 1

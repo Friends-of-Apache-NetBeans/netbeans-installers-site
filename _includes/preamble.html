@@ -1,5 +1,4 @@
-<h2>Installers for <b>Apache NetBeans-{{ sb.netbeans-version }}</b>
-<span style="font-size:80%">packaged with <b>{{sb.jdk-vendor}}  JDK-{{ sb.jdk-version }}</b><span></h2>
+<h2>Installers and packages for <b>Apache NetBeans</b></h2>
 
 <section>
   <p><a href="https://netbeans.apache.org">Apache NetBeans</a> packages / installers
@@ -8,10 +7,31 @@
     binary zip release. The packages themselves are not released by the Apache
     Software Foundation.
   </p>
-  <p>These installers include a local Java {{ sb.jdk-version }} JDK for the IDE to run on,
+  <p>Most installers include a local Java JDK for the IDE to run on,
     offering a self-contained out-of-the-box experience. Additional JDK's for projects
     may be registered and/or downloaded using <code>Tools / Java Platforms</code> in the
     IDE menu, supporting development of projects from Java 8 up.</p>
+  <p>
+    For each supported Apache NetBeans release there is also a JDK-less version per platform.
+    This requires that your machine already has a JDK installed. 
+  </p>
+  <p>To get the proper package or installer for your platform, select one of the tabs above or one of the links below.
+    <dl>
+      <dt><a href="deb_arm64/">deb_arm64</a></dt>
+      <dd>Debian for ARM64 machines such Raspberry Pi with Raspberry-OS.</dd>
+      <dt><a href="deb_x64/">deb_x64</a></dt>
+      <dd>Debian for Intel and AMD PCs and laptops.</dd>
+      <dt><a href="macos_arm64/">macOS_ARM64</a></dt>
+      <dd>Apple macOS of ARM, a.k.a. Apple Silicon (M1, M2, M3, M4, M5,..).</dd>
+      <dt><a href="macos_x64/">macOS_x64</a></dt>
+      <dd>Apple macOS on Intel 64 bit</dd>
+      <dt><a href="rpm_x64/">rpm_x64</a></dt>
+      <dd>Redhat Package Manager (RPM) for Intel/AMD 64 bit</dd>
+      <dt><a href="windows_x64">Windows_x64</a></dt>
+      <dd>MicroSoft Windows for Intel/AMD 64 bit</dd>
+    </dl>
+
+  </p>
 </section>
 
 <section class="terms">

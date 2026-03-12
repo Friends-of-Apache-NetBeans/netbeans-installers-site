@@ -1,0 +1,21 @@
+---
+layout: page
+---
+<h1>{{page.title}}</h1>
+{% for org_hash in site.data[page.package_type] reversed %}
+{% assign sb = org_hash[1][0] %}
+<h2>Apache Netbeans {{sb.netbeans-version }} bundled with JDK {{sb.jdk-variant}}</h2>
+  <section class="download-arch">
+    <h3>Apple macOS for Apple Silicon</h3>
+    <h4>Apple Silicon (M1, M2, M3, M4, etc)</h4>
+    <div><a href="{{ sb.macos-pkg-arm-url }}" class="btn"><i class="fa fa-apple"></i>Apache NetBeans 
+        {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
+        <span class="type-arch">(.pkg arm64)</span></a> {{sb.macos-pkg-arm-downloads}} downloads</div>
+    <aside>
+      <code class="hash">SHA256 : {{ sb.macos-pkg-arm-hash }}</code><br>
+      The .pkg package can be installed by clicking on the downloaded file or in the command line with 
+      <code>open &lt;file&gt;</code>.
+
+    </aside>
+  </section>
+{% endfor %}

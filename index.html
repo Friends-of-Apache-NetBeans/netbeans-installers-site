@@ -3,7 +3,7 @@ layout: page
 title: Apache NetBeans Latest Installer Packages
 ---
 {%- if page.url == "/" -%}
-{%- for x in site.data reversed -%}
+{%- for x in site.data -%}
 {%- assign sb = x[0] -%}
 {%- break -%}
 {%- endfor -%}
@@ -11,10 +11,6 @@ title: Apache NetBeans Latest Installer Packages
 {%- assign sb = page.sb -%}
 {%- endif -%}
 {%- assign sb = site.data[sb] -%}
-
-
 {%- include preamble.html -%}
-
-{%- include release.html -%}
 {%- include who.html -%}
 

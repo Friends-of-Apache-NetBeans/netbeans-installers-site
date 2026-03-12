@@ -76,6 +76,7 @@ class ProcessAssets {
                 };
             } else {
                 installer = "windows-exe-x64";
+                packageDir = "windows_x64";
             }
 
             Path outFile = workingDir.resolve("_data/").resolve(packageDir).resolve(releaseTag + ".yaml");
