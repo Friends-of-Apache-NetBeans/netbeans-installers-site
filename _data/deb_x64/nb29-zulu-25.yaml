@@ -1,5 +1,5 @@
 - netbeans-version: 29
-  netbeans-url: https://downloads.apache.org/netbeans/netbeans/29/netbeans-29-bin.zip
+  netbeans-url: https://dist.apache.org/repos/dist/dev/netbeans/netbeans/29/netbeans-29-bin.zip
   netbeans-sha: 62d953d4b7a9ecdfe4db8b51120ad371f9046936af4b24d2ac880b680a5b11cd9475cf899f13d3027986451497cd7f9b5d89620c438d02da7809c38b5332ae83
   netbeans-properties: nb29.properties
   nbpackage-url: https://dlcdn.apache.org/netbeans/netbeans-nbpackage/1.0/nbpackage-1.0-bin.zip
@@ -21,7 +21,8 @@
   jdk-linux-x64-sha: 664f14258596537add2e4e91446594a451cd2710dba88f24533ba0e084bdc972
   jdk-linux-arm-url: https://cdn.azul.com/zulu/bin/zulu25.32.17-ca-jdk25.0.2-linux_aarch64.tar.gz
   jdk-linux-arm-sha: f7295abb1decb2f6e0ea9f760a70917f2d47356db4366d615c7ab9b01c3c6866
-  linux-deb-x64-file: apache-netbeans_29-1_zulu-25_amd64.deb
-  linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-25/apache-netbeans_29-1_zulu-25_amd64.deb
-  linux-deb-x64-hash: e7dec0fad4b494be6ca429b9f9d1909247400265d9d1799246e0752ea37dd8ef
-  linux-deb-x64-downloads: 1
+  jdk-main-downloadpage: https://www.azul.com/downloads/
+  linux-deb-x64-file: apache-netbeans_29-1_amd64.deb
+  linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/apache-netbeans_29-1_amd64.deb
+  linux-deb-x64-hash: c2b9f2d1442d29795ed9b5d2d4b2b561eb58ac4805ed655c74ceab57d97bbc30
+  linux-deb-x64-downloads: 323

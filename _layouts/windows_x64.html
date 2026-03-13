@@ -3,18 +3,31 @@ layout: page
 ---
 <h1>{{page.title}}</h1>
 {% for org_hash in site.data[page.package_type] reversed %}
+<!--{{ org_hash[0] }}-->
 {% assign sb = org_hash[1][0] %}
+{%- if sb.jdk-variant == "none" -%}
+<h2>Apache Netbeans {{sb.netbeans-version }} without bundled JDK</h2>
+{%- else -%}
 <h2>Apache Netbeans {{sb.netbeans-version }} bundled with JDK {{sb.jdk-variant}}</h2>
+{% endif %}
+
 <section class="download-arch">
     <h3>MicroSoft Windows</h3>
     <h4>Intel/AMD (X64) </h4>
     <div><a href="{{ sb.windows-exe-x64-url }}" class="btn"><i class="fa fa-windows"></i>
-        Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
+        Apache NetBeans {{ sb.netbeans-version }} 
+  {%- if sb.jdk-variant != none -%}
+        + JDK {{ sb.jdk-version }}
+  {%- endif -%}
         <span class="type-arch">(.exe x86_64)</span></a> {{sb.windows-exe-x64-downloads}} downloads
     </div>
     <aside>
       <code class="hash">SHA256 : {{ sb.windows-exe-x64-hash }}</code><br>
       To install Apache NetBeans on your Windows computer, download and run the exe file.
+      {%- if sb.jdk-variant == "none"  -%}
+      <br>To run NetBeans without a bundled JDK, you must have a JDK installed!
+      {%- endif -%}
     </aside>
   </section>
-{%-endfor -%}
+<!--/{{ org_hash[0] }}-->
+{% endfor %}

@@ -1,5 +1,5 @@
 - netbeans-version: 29
-  netbeans-url: https://downloads.apache.org/netbeans/netbeans/29/netbeans-29-bin.zip
+  netbeans-url: https://dist.apache.org/repos/dist/dev/netbeans/netbeans/29/netbeans-29-bin.zip
   netbeans-sha: 62d953d4b7a9ecdfe4db8b51120ad371f9046936af4b24d2ac880b680a5b11cd9475cf899f13d3027986451497cd7f9b5d89620c438d02da7809c38b5332ae83
   netbeans-properties: nb29.properties
   nbpackage-url: https://dlcdn.apache.org/netbeans/netbeans-nbpackage/1.0/nbpackage-1.0-bin.zip
@@ -21,7 +21,8 @@
   jdk-linux-x64-sha: 664f14258596537add2e4e91446594a451cd2710dba88f24533ba0e084bdc972
   jdk-linux-arm-url: https://cdn.azul.com/zulu/bin/zulu25.32.17-ca-jdk25.0.2-linux_aarch64.tar.gz
   jdk-linux-arm-sha: f7295abb1decb2f6e0ea9f760a70917f2d47356db4366d615c7ab9b01c3c6866
-  macos-pkg-arm64-file: Apache-NetBeans-29-zulu-25-arm64.pkg
-  macos-pkg-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-25/Apache-NetBeans-29-zulu-25-arm64.pkg
-  macos-pkg-arm64-hash: 991daeb2ea3900cafcab80e76b5c1add569d16e4cff45f5b42ad80187fb483ae
-  macos-pkg-arm64-downloads: 2
+  jdk-main-downloadpage: https://www.azul.com/downloads/
+  macos-pkg-arm64-file: Apache-NetBeans-29-arm64.pkg
+  macos-pkg-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg
+  macos-pkg-arm64-hash: 5a3dcad4edc2a327b7ef25f0c299060f41879f2ca482e27281700ae9ee14e776
+  macos-pkg-arm64-downloads: 3293

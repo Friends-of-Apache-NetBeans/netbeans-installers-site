@@ -15,3 +15,5 @@ nbproject/
 
 # backup by editors
 *~
+/AssetsProcessor/build/
+/AssetsProcessor/_data/

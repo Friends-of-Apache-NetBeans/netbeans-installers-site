@@ -1,0 +1,11 @@
+- netbeans-version: 29
+  netbeans-url: https://downloads.apache.org/netbeans/netbeans/29/netbeans-29-bin.zip
+  netbeans-sha: 62d953d4b7a9ecdfe4db8b51120ad371f9046936af4b24d2ac880b680a5b11cd9475cf899f13d3027986451497cd7f9b5d89620c438d02da7809c38b5332ae83
+  netbeans-properties: nb29.properties
+  nbpackage-url: https://dlcdn.apache.org/netbeans/netbeans-nbpackage/1.0/nbpackage-1.0-bin.zip
+  nbpackage-sha: 585bd2dadb28c4d3e4bfe97f41e058975bd9a95d960bb620fa5b3b907e3c6d40fc63024a5a592739d9e8a510c90dd8a5ec24a170f5153f0a21bf6086596ed5a4
+  jdk-variant: none
+  macos-pkg-arm64-file: Apache-NetBeans-29.pkg
+  macos-pkg-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/Apache-NetBeans-29.pkg
+  macos-pkg-arm64-hash: 91888f40d7adf8c7a6454087756132b57420e85ca0842b0f5672b35cebfaa940
+  macos-pkg-arm64-downloads: 0
