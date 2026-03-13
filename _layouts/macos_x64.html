@@ -8,13 +8,15 @@ layout: page
 {%- if sb.jdk-variant == "none" -%}
 <h2>Apache Netbeans {{sb.netbeans-version }} without bundled JDK</h2>
 {%- else -%}
-<h2>Apache Netbeans {{sb.netbeans-version }} bundled with JDK {{sb.jdk-variant}}</h2>
+<h2>Apache Netbeans {{sb.netbeans-version }} bundled with JDK {{sb.jdk-vendor}} {{sb.jdk-version}}</h2>
 {% endif %}
+{{sb.jdk-trademark-line}}
+{{sb.jdk-features}}
   <section class="download-arch">
     <h3>Apple macOS for Intel Silicon</h3>
     <div><a href="{{ sb.macos-pkg-x64-url }}" class="btn"><i class="fa fa-apple"></i>Apache NetBeans 
         {{ sb.netbeans-version }} 
-         {%- if sb.jdk-variant != none -%}
+         {%- if sb.jdk-variant != "none" -%}
         + JDK {{ sb.jdk-version }}
         {%- endif -%}
         <span class="type-arch">(.pkg x86_64)</span></a>  {{sb.macos-pkg-x64-downloads}} downloads</div>

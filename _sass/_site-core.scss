@@ -154,7 +154,7 @@ address {
     a {
       display: inline-block;
       color: $white;
-      text-transform: uppercase;
+      text-transform: lowercase;
       font-family: $heading-font-family;
       @include media ($tablet) {
         padding-right: 1.5em;
