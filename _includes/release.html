@@ -37,15 +37,15 @@
     </aside>
   </section>
   {%- endif -%}
-  {%- if sb.linux-deb-arm-hash -%}
+  {%- if sb.linux-deb-arm64-hash -%}
   <section class="download-arch">
     <h3>Linux (arm64) </h3>
     <h4>Debian based (Ubuntu, Mint, Raspberry-OS, etc) package</h4>
-    <div><a href="{{ sb.linux-deb-arm-url }}" class="btn"><i class="fa fa-linux"></i>
+    <div><a href="{{ sb.linux-deb-arm64-url }}" class="btn"><i class="fa fa-linux"></i>
         Apache NetBeans {{ sb.netbeans-version }} + JDK {{ sb.jdk-version }}
-        <span class="type-arch">(.deb arm64)</span></a>  {{sb.linux-deb-arm-downloads}} downloads</div>
+        <span class="type-arch">(.deb arm64)</span></a>  {{sb.linux-deb-arm64-downloads}} downloads</div>
     <aside>
-      <code class="hash">SHA256 : {{ sb.linux-deb-arm-hash }}</code><br>
+      <code class="hash">SHA256 : {{ sb.linux-deb-arm64-hash }}</code><br>
       The .deb package should be installed using the distribution software manager,
       or using eg. <code>sudo dpkg -i FILENAME</code>.<br>
       If using this package on a Raspberry Pi, we recommend switching from Wayland to X11.
@@ -67,13 +67,6 @@
       The .pkg package can be installed by clicking on the downloaded file or in the command line with 
       <code>open &lt;file&gt;</code>.
     </aside>
-  </section>
-  {%- else -%}
-  <section class="information">
-    <h2>Transitional releases</h2>
-    <p>Currently we are waiting for acceptance by Apple Developer support as FOSS publisher, so that we can sign and
-      notarize the Apple macOS releases.
-    </p>
   </section>
   {%- endif -%}
   {%- if sb.macos-pkg-arm-hash -%}

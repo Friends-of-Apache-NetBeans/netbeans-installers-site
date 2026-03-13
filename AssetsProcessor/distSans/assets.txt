@@ -1,0 +1,3 @@
+apache-netbeans-29-0.noarch.rpm;https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/apache-netbeans-29-0.noarch.rpm;sha256:f10fd3be21207f5a85291af90b576de70a80bca964b7f88567dd605110fdb28a;0
+Apache-NetBeans-29.exe;https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/Apache-NetBeans-29.exe;sha256:697bd355336fe48886e9c47bd67bd7d86b9242a08f3c9a579e633f4b7d72e5e6;0
+apache-netbeans_29-1_all.deb;https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/apache-netbeans_29-1_all.deb;sha256:e3cf63aed92a0c79d37e251ece6775e4487681557d894596080d01368d19668b;0
