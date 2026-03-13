@@ -7,7 +7,7 @@ exclude:
 
 # Site settings
 title: Friends of Apache NetBeans
-subtitle:
+subtitle: Open Source packages and installers
 name: Friends of Apache NetBeans
 description: Site
 # Base URL of site (i.e. /blog). It should always start with a slash,
