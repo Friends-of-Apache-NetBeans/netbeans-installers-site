@@ -29,6 +29,12 @@ layout: page
       <br>To run NetBeans without a bundled JDK, you must have a JDK installed!
       {%- endif -%}
     </aside>
+  {%- if sb.jdk-variant != "none" -%}
+       <p>
+        The <a href="{{sb.jdk-releasenotes-link}}">release notes</a> of {{sb.jdk-vendor}} {{sb.jdk-version}}.<br>
+       This and other versions of the bundled JDK can be downloaded from <a href="{{sb.jdk-maindownloadpage}}">{{sb.jdk-vendor}}</a>.<br>
+      </p>
+  {%- endif -%}
   </section>
 <!--/{{ org_hash[0] }}-->
 {% endfor %}
