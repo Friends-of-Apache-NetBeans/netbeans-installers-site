@@ -27,4 +27,4 @@
   linux-deb-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/apache-netbeans_29-1_arm64.deb
   linux-deb-arm64-hash: d7691c37d40a84c2f204ec67acdeba1e7438c8c17fe763e564d9cb4733037270
   linux-deb-arm64-downloads: 179
-  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAn)</a>"
+  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"

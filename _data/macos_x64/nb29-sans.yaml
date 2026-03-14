@@ -9,4 +9,4 @@
   macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/Apache-NetBeans-29.pkg
   macos-pkg-x64-hash: 91888f40d7adf8c7a6454087756132b57420e85ca0842b0f5672b35cebfaa940
   macos-pkg-x64-downloads: 0
-  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAn)</a>"
+  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
