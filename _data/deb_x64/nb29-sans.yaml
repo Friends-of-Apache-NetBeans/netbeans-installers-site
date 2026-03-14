@@ -9,4 +9,4 @@
   linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/apache-netbeans_29-1_all.deb
   linux-deb-x64-hash: e3cf63aed92a0c79d37e251ece6775e4487681557d894596080d01368d19668b
   linux-deb-x64-downloads: 0
-  package-publisher: Friends of Apacahe NetBeans (FoAN)
+  package-publisher: Friends of Apache NetBeans (FoAN)

@@ -16,11 +16,12 @@
   jdk-version: 25.0.2
   jdk-vendor: Adoptium Temurin
   jdk-variant: temurin-25
-  jdk-trademark-line: 'Adoptium' and 'Adoptium Eclipse Temurin' are trademarks Eclipse Adoptium (/əˈdɒptiəm/) Working Group .
+  jdk-trademark-line: "'Adoptium' and 'Adoptium Eclipse Temurin' are trademarks Eclipse Adoptium (/əˈdɒptiəm/) Working Group."
   jdk-releasenotes-link: https://adoptium.net/temurin/release-notes?version
   jdk-maindownloadpage: https://adoptium.net/temurin/releases
   linux-deb-arm64-file: apache-netbeans_29-1_arm64.deb
   linux-deb-arm64-url: https://github.com/codelerity/netbeans-packages/releases/download/v29-build1/apache-netbeans_29-1_arm64.deb
   linux-deb-arm64-hash: 892954e45cd4fb0305bf277ec3568e3e66c33698a0b7c279ce08db18a9e88f09
   linux-deb-arm64-downloads: 139
-  package-publisher: Codelerity Ltd.
+  package-publisher: "<a href='https://www.codelerity.com/open-source/'>Codelerity Ltd</a>"
+

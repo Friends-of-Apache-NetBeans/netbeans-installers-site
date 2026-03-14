@@ -23,4 +23,4 @@
   linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/apache-netbeans_28-1_amd64.deb
   linux-deb-x64-hash: d54897dba115b08cd49f75af2aa165b412bce126577989da7e7e15f3d4ffd795
   linux-deb-x64-downloads: 369
-  package-publisher: Friends of Apacahe NetBeans (FoAN)
+  package-publisher: Friends of Apache NetBeans (FoAN)

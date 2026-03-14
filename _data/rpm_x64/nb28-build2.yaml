@@ -23,4 +23,4 @@
   linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/apache-netbeans-28-0.x86_64.rpm
   linux-rpm-x64-hash: 668c22cf9b198582477e7cb9a613ea6d453fe57f09a1a0ffa423acd49054ea1a
   linux-rpm-x64-downloads: 211
-  package-publisher: Friends of Apacahe NetBeans (FoAN)
+  package-publisher: Friends of Apache NetBeans (FoAN)
