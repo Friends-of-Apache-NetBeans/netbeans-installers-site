@@ -26,3 +26,4 @@
   linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/apache-netbeans-29-0.x86_64.rpm
   linux-rpm-x64-hash: 920857d435672d1b3cac791e937b631e0c6279c14c4a87e9c77a8456971fd93d
   linux-rpm-x64-downloads: 213
+  package-publisher: Friends of Apacahe NetBeans (FoAN)

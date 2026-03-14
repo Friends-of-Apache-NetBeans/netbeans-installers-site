@@ -23,3 +23,4 @@
   macos-pkg-arm64-url: https://github.com/codelerity/netbeans-packages/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg
   macos-pkg-arm64-hash: dba728fc9697e583d7e87f87a77598f35504ada770c0a5fecf8e1acf1a96aa2e
   macos-pkg-arm64-downloads: 8637
+  package-publisher: Codelerity Ltd.

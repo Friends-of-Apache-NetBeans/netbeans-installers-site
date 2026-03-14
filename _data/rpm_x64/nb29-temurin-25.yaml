@@ -19,7 +19,8 @@
   jdk-trademark-line: 'Adoptium' and 'Adoptium Eclipse Temurin' are trademarks Eclipse Adoptium (/əˈdɒptiəm/) Working Group .
   jdk-releasenotes-link: https://adoptium.net/temurin/release-notes?version
   jdk-maindownloadpage: https://adoptium.net/temurin/releases
-  windows-exe-x64-file: Apache-NetBeans-29.exe
-  windows-exe-x64-url: https://github.com/codelerity/netbeans-packages/releases/download/v29-build1/Apache-NetBeans-29.exe
-  windows-exe-x64-hash: 0f6233622bd8a54ca0d7b3cfbee9edd55fe71d930687c106f7f2f19756ed8774
-  windows-exe-x64-downloads: 41000
+  linux-rpm-x64-file: apache-netbeans-29-0.x86_64.rpm
+  linux-rpm-x64-url: https://github.com/codelerity/netbeans-packages/releases/download/v29-build1/apache-netbeans-29-0.x86_64.rpm
+  linux-rpm-x64-hash: f7b305c31be3e4adb604e040e75a248ae44bcfa6de3193c8948bdcbda36e269b
+  linux-rpm-x64-downloads: 361
+  package-publisher: Codelerity Ltd.

@@ -23,3 +23,4 @@
   macos-pkg-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/Apache-NetBeans-27-arm64.pkg
   macos-pkg-arm64-hash: c22a09a2ce5e2a9431888ee9c19158e24aa2881ce2d53820581d47abfe5570c6
   macos-pkg-arm64-downloads: 870
+  package-publisher: Friends of Apacahe NetBeans (FoAN)

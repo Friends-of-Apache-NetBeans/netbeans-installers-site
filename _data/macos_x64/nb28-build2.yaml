@@ -23,3 +23,4 @@
   macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/Apache-NetBeans-28-x86_64.pkg
   macos-pkg-x64-hash: fc9976c8b55e1a81586d77c3b26d342c16f5912b4e385d8ea9e57294218f297e
   macos-pkg-x64-downloads: 2181
+  package-publisher: Friends of Apacahe NetBeans (FoAN)
