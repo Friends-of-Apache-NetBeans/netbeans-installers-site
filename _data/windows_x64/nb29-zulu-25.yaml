@@ -26,4 +26,4 @@
   windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29.exe
   windows-exe-x64-hash: 152531686f53d9af24d41172576c5fb780b9054e027ed38b496b1a7aefa3baa4
   windows-exe-x64-downloads: 9431
-  package-publisher: Friends of Apache NetBeans (FoAN)
+  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAn)</a>"

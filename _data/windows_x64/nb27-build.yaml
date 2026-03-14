@@ -23,4 +23,4 @@
   windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/Apache-NetBeans-27.exe
   windows-exe-x64-hash: 14cc18e5bb45aecbc29cdc222c5d32b2bff8a100728672138651950c1151513b
   windows-exe-x64-downloads: 55
-  package-publisher: Friends of Apache NetBeans (FoAN)
+  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAn)</a>"
