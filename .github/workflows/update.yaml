@@ -35,5 +35,7 @@ jobs:
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: render website and deploy
+        uses: Friends-of-Apache-NetBeans/netbeans-installers-site/.github/workflows/Build.yaml@main
                 
 
