@@ -9,7 +9,7 @@
   jdk-version: 25.0.2
   jdk-vendor: Azul Zulu
   jdk-variant: zulu-25
-  jdk-name: Azul Zulu 25.0.2
+  jdk-name: Azul Zulu
   jdk-trademark-line: Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc.
   jdk-releasenotes-link: https://docs.azul.com/core/release-notes
   jdk-properties: zulu-25.properties
