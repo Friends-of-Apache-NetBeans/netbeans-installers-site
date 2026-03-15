@@ -1,0 +1,28 @@
+- package-publisher: "<a href='https://www.friendsofapachenetbeans.org'>Friends of Apache NetBeans (FoAN)</a>"
+  netbeans-version: 29
+  netbeans-url: https://downloads.apache.org/netbeans/netbeans/29/netbeans-29-bin.zip
+  netbeans-sha: 62d953d4b7a9ecdfe4db8b51120ad371f9046936af4b24d2ac880b680a5b11cd9475cf899f13d3027986451497cd7f9b5d89620c438d02da7809c38b5332ae83
+  netbeans-properties: nb29.properties
+  nbpackage-url: https://dlcdn.apache.org/netbeans/netbeans-nbpackage/1.0/nbpackage-1.0-bin.zip
+  nbpackage-sha: 585bd2dadb28c4d3e4bfe97f41e058975bd9a95d960bb620fa5b3b907e3c6d40fc63024a5a592739d9e8a510c90dd8a5ec24a170f5153f0a21bf6086596ed5a4
+  jdk-windows-x64-url: https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-jdk21.0.10-win_x64.zip
+  jdk-windows-x64-sha: 1bb5e1a3e22115b935dda4a847deff62918d1de8d6f602d51b4c5726dfe45b61
+  jdk-version: 21.0.10+7
+  jdk-vendor: Azul Zulu
+  jdk-variant: zulu-21
+  jdk-trademark-line: Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc.
+  jdk-releasenotes-link: https://docs.azul.com/core/release-notes
+  jdk-properties: zulu-21.properties
+  jdk-maindownloadpage: https://www.azul.com/downloads/
+  jdk-macos-x64-url: https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-jdk21.0.10-macosx_x64.tar.gz
+  jdk-macos-x64-sha: 0dc3de9c4de5fe732a09bafe2103687c365c904ab9542043e89c829dd49e9e28
+  jdk-macos-arm-url: https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-jdk21.0.10-macosx_aarch64.tar.gz
+  jdk-macos-arm-sha: 7c29d3232a163c366af3fda303bd54ffda22f41c16ba4c87f19b6adb91b1d232
+  jdk-linux-x64-url: https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-jdk21.0.10-linux_x64.tar.gz
+  jdk-linux-x64-sha: d9bcbea873e758c1282cccee2f73a0e733d23f054fc1b0f6a876169e73a28076
+  jdk-linux-arm-url: https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-jdk21.0.10-linux_aarch64.tar.gz
+  jdk-linux-arm-sha: 62bfdbeb4e4bd69329d450e433222521dbde6aefd14c2a0a43055cc16d5aeed9
+  macos-pkg-x64-file: Apache-NetBeans-29-zulu-21-x86_64.pkg
+  macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/Apache-NetBeans-29-zulu-21-x86_64.pkg
+  macos-pkg-x64-hash: cedd2ca4b3690c8848434429596dc43d9de26f497b993c5a59921a6547dfadf4
+  macos-pkg-x64-downloads: 4
