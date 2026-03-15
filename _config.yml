@@ -1,9 +1,14 @@
 exclude:
   - "/vendor/"
+  - "/dist/"
   - "/Gemfile"
   - "/Gemfile.lock"
   - "/LICENSE.md"
   - "/README.md"
+  - "/AssetsProcessor/"
+  - "/AssetsProcessor.java"
+  - "/doUpdate.sh"
+  - "/serve.sh"
 
 # Site settings
 title: Friends of Apache NetBeans
