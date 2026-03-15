@@ -15,7 +15,8 @@ import java.util.regex.Pattern;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 /**
- *
+ * Interpret the effective.properties file and the assets to yaml files for Jekylls use.
+ * Note that the property keys are saved with dots '.' replaced by dashes '-'.
  * @author homberghp {@code <pieter.van.den.hombergh@gmail.com>}
  */
 public class AssetsProcessor {
@@ -174,10 +175,10 @@ public class AssetsProcessor {
                 if (line.startsWith("#")) {
                     continue;
                 }
-                String[] split = line.split("\\s?=\\s?");
+                String[] split = line.split("\\s?=\\s?",2);
                 if (split.length > 1) {
                     String key = split[0].replaceAll("\\.", "-");
-                    String value = split[1];
+                    String value = fixQuotes(split[1]);
                     props.put(key, value);
                 }
                 first = false;
@@ -234,6 +235,26 @@ public class AssetsProcessor {
                 }
             }
         }
+    }
+    /**
+     * Fixes quoted strings by replacing the inner quotes with the opposite of
+     * the outer. Example: {@code "Hello "old" World"} becomes {code "Hello
+     * 'old' World"}
+     *
+     * @param in string
+     * @return corrected string
+     */
+    static String fixQuotes(String in) {
+        final char outer1 = in.charAt(0);
+        final char outer2 = in.charAt(in.length() - 1);
+        String result;
+        if (outer1 == outer2 && (outer1 == '"' || outer1 == '\'')) {
+            String newInner = ('"' == outer1) ? "\'" : "\"";
+            result=outer1+in.substring(1,in.length() -1).replaceAll(outer1+"",newInner)+outer2;
+        } else {
+            result = in;
+        }
+        return result;
     }
 
 }

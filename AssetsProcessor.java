@@ -1,1 +1,1 @@
-AssetsProcessor/src/AssetsProcessor.java
+AssetsProcessor/src/main/java/AssetsProcessor.java
