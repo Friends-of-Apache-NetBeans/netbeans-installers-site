@@ -20,7 +20,9 @@ public class FixQuotesTest {
         String s =AssetsProcessor.fixQuotes(in);
         System.out.println("s = " + s);
 
-        assertEquals("\"Hello 'old' World\"", s);
+        assertEquals("""
+                     "Hello 'old' World"\
+                     """, s);
 
     }
     @Test
@@ -30,7 +32,9 @@ public class FixQuotesTest {
         String s =AssetsProcessor.fixQuotes(in);
         System.out.println("s = " + s);
 
-        assertEquals("'Hello \"old\" World'", s);
+        assertEquals("""
+                     'Hello "old" World'\
+                     """, s);
 
     }
 }
