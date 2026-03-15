@@ -23,7 +23,7 @@
   jdk-linux-x64-sha: 2a97720c043166381fb6e1e7884969ac9d9149107678ec2f424d50697c55fa49
   jdk-linux-arm-url: https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-fx-jdk25.0.2-linux_aarch64.tar.gz
   jdk-linux-arm-sha: 90bbac82c80e0f61d56ac6b0c23b0317a6fc33807154ef8acecfebb5ae08027c
-  jdk-features: Include JavaFX runtime. JavaFx is a trademark of Oracle. inc.
+  jdk-features: "Includes <a href='https://openjfx.io/'>JavaFX</a> runtime. JavaFX is a trademark of Oracle. Inc."
   linux-deb-x64-file: apache-netbeans_29-1_zulufx-25_amd64.deb
   linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulufx-25/apache-netbeans_29-1_zulufx-25_amd64.deb
   linux-deb-x64-hash: 3c52bb505f95d4891e565efe0d9d4f3cba95aaac9ea0255d95f8c22adf47b973
