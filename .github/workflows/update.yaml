@@ -35,9 +35,3 @@ jobs:
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: deploy updated website
-        with:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: Friends-of-Apache-NetBeans/netbeans-installers-site/.github/workflows/Build.yml@main
-
-        
