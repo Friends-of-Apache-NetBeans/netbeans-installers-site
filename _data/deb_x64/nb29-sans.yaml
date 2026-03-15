@@ -10,3 +10,4 @@
   linux-deb-x64-hash: e3cf63aed92a0c79d37e251ece6775e4487681557d894596080d01368d19668b
   linux-deb-x64-downloads: 0
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
+  jdk-name: Zulu

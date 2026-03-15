@@ -26,3 +26,4 @@
   linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/apache-netbeans-29-0.zulu-21.x86_64.rpm
   linux-rpm-x64-hash: 10316de97f4bed5340793bf466ecee0d818601cf1d8dd1ed1457f3f87605edd5
   linux-rpm-x64-downloads: 0
+  jdk-name: Zulu

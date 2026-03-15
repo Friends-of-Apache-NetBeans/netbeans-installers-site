@@ -26,3 +26,4 @@
   linux-deb-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/apache-netbeans_29-1_zulu-21_arm64.deb
   linux-deb-arm64-hash: 6d84cb62a399d5a79e6ed02a455767dc607879f5214b9ebdd41f04c7efb1f0ab
   linux-deb-arm64-downloads: 0
+  jdk-name: Zulu

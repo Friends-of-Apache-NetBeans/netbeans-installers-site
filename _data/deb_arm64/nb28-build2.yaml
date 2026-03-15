@@ -24,3 +24,4 @@
   linux-deb-arm64-hash: cc46a0a645f55b529ff59156cfb20fc3b7958d0c121847dbce313e6bef1e403e
   linux-deb-arm64-downloads: 201
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
+  jdk-name: Zulu

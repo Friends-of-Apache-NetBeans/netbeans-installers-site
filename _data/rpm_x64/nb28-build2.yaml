@@ -24,3 +24,4 @@
   linux-rpm-x64-hash: 668c22cf9b198582477e7cb9a613ea6d453fe57f09a1a0ffa423acd49054ea1a
   linux-rpm-x64-downloads: 211
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
+  jdk-name: Zulu

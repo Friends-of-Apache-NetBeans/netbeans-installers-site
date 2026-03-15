@@ -24,3 +24,4 @@
   macos-pkg-arm64-hash: 7c64cfa68c064d54f750102aa0590c65d4062e829ea33d9dbceb867b06c2c886
   macos-pkg-arm64-downloads: 4049
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
+  jdk-name: Zulu

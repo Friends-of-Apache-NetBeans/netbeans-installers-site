@@ -14,8 +14,9 @@
   jdk-macos-x64-url: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_mac_hotspot_25.0.2_10.tar.gz
   jdk-macos-x64-sha: 7caddeb2d1d06a21487fdf55198349f122ba7b24bfc613b8923a42a133a92dc5
   jdk-version: 25.0.2
-  jdk-vendor: Adoptium Temurin
+  jdk-vendor: Eclipse Adoptium
   jdk-variant: temurin-25
+  jdk-name: Eclipse Temurin
   jdk-trademark-line: "'Adoptium' and 'Adoptium Eclipse Temurin' are trademarks Eclipse Adoptium (/əˈdɒptiəm/) Working Group."
   jdk-releasenotes-link: https://adoptium.net/temurin/release-notes?version
   jdk-maindownloadpage: https://adoptium.net/temurin/releases

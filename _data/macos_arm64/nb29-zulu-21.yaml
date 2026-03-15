@@ -26,3 +26,4 @@
   macos-pkg-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/Apache-NetBeans-29-zulu-21-arm64.pkg
   macos-pkg-arm64-hash: cb1e8d4baf4edd4235fcc16e44b70b7e6537f29b2e3110ec2af647ec99ba95b8
   macos-pkg-arm64-downloads: 4
+  jdk-name: Zulu

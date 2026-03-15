@@ -27,3 +27,4 @@
   windows-exe-x64-hash: 152531686f53d9af24d41172576c5fb780b9054e027ed38b496b1a7aefa3baa4
   windows-exe-x64-downloads: 9431
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
+  jdk-name: Zulu
