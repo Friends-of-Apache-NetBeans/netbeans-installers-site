@@ -1,5 +1,5 @@
 # publish release to netbeans-installers-site
-name: Update
+name: Release_Update
 on: 
   workflow_dispatch:
     inputs:
