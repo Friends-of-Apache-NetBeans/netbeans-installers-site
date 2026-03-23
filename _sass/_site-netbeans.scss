@@ -57,3 +57,16 @@ link.nav-link.active {
     background-color: white;
     color:black;
 }
+div.tip {
+  border: solid #aaf 3px;
+  padding-left:6em;
+  padding-right:1em;
+  margin:2em;
+}
+
+div.tip::before {
+  content: "TIP!  ";
+  color: #aaf;
+  font-size: 120%;
+  font-weight: bold;
+}

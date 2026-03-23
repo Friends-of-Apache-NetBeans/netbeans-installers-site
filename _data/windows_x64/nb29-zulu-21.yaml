@@ -25,5 +25,8 @@
   windows-exe-x64-file: Apache-NetBeans-29-zulu-21.exe
   windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/Apache-NetBeans-29-zulu-21.exe
   windows-exe-x64-hash: 3b4ff476cd2595945961fa3102b2ebdda84fd8c177ee24c6eb8da58703755299
-  windows-exe-x64-downloads: 0
-  jdk-name: Zulu
+  windows-exe-x64-downloads: 3
+  package-file: Apache-NetBeans-29-zulu-21.exe
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/Apache-NetBeans-29-zulu-21.exe
+  package-hash: 3b4ff476cd2595945961fa3102b2ebdda84fd8c177ee24c6eb8da58703755299
+  package-downloads: 3

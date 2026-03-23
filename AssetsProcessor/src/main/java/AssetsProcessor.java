@@ -15,8 +15,10 @@ import java.util.regex.Pattern;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 /**
- * Interpret the effective.properties file and the assets to yaml files for Jekylls use.
- * Note that the property keys are saved with dots '.' replaced by dashes '-'.
+ * Interpret the effective.properties file and the assets to yaml files for
+ * Jekylls use. Note that the property keys are saved with dots '.' replaced by
+ * dashes '-'.
+ *
  * @author homberghp {@code <pieter.van.den.hombergh@gmail.com>}
  */
 public class AssetsProcessor {
@@ -137,16 +139,15 @@ public class AssetsProcessor {
     }
 
     void writeAssetAsYaml(final PrintStream out, String installer, Asset asset) {
-        out.println("  " + installer
-                + "-file: " + asset.fileName);
-        out.println("  " + installer
-                + "-url: " + asset.url);
-
         String sha = asset.hash.split(":")[1];
-        out.println("  " + installer
-                + "-hash: " + sha);
-        out.println("  " + installer
-                + "-downloads: " + asset.downloadCount);
+        out.println("  " + installer + "-file: " + asset.fileName);
+        out.println("  " + installer + "-url: " + asset.url);
+        out.println("  " + installer + "-hash: " + sha);
+        out.println("  " + installer + "-downloads: " + asset.downloadCount);
+        out.println("  package-file: " + asset.fileName);
+        out.println("  package-url: " + asset.url);
+        out.println("  package-hash: " + sha);
+        out.println("  package-downloads: " + asset.downloadCount);
     }
 
     Asset lineToAsset(String line) throws IllegalArgumentException {
@@ -175,7 +176,7 @@ public class AssetsProcessor {
                 if (line.startsWith("#")) {
                     continue;
                 }
-                String[] split = line.split("\\s?=\\s?",2);
+                String[] split = line.split("\\s?=\\s?", 2);
                 if (split.length > 1) {
                     String key = split[0].replaceAll("\\.", "-");
                     String value = fixQuotes(split[1]);
@@ -236,6 +237,7 @@ public class AssetsProcessor {
             }
         }
     }
+
     /**
      * Fixes quoted strings by replacing the inner quotes with the opposite of
      * the outer. Example: {@code "Hello "old" World"} becomes {code "Hello
@@ -250,7 +252,7 @@ public class AssetsProcessor {
         String result;
         if (outer1 == outer2 && (outer1 == '"' || outer1 == '\'')) {
             String newInner = ('"' == outer1) ? "\'" : "\"";
-            result=outer1+in.substring(1,in.length() -1).replaceAll(outer1+"",newInner)+outer2;
+            result = outer1 + in.substring(1, in.length() - 1).replaceAll(outer1 + "", newInner) + outer2;
         } else {
             result = in;
         }

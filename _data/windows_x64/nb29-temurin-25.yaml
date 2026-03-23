@@ -25,3 +25,8 @@
   windows-exe-x64-hash: 0f6233622bd8a54ca0d7b3cfbee9edd55fe71d930687c106f7f2f19756ed8774
   windows-exe-x64-downloads: 41000
   package-publisher: "<a href='https://www.codelerity.com/open-source/'>Codelerity Ltd</a>."
+  package-file: Apache-NetBeans-29.exe
+  package-url: https://www.codelerity.com/netbeans/
+  package-hash: 0f6233622bd8a54ca0d7b3cfbee9edd55fe71d930687c106f7f2f19756ed8774
+  package-downloads: 41000
+  package-publisher: "<a href='https://www.codelerity.com/open-source/'>Codelerity Ltd</a>."

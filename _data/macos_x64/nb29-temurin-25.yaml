@@ -25,3 +25,7 @@
   macos-pkg-x64-hash: b902907a54e2493b92926110da7bb679f2ab0d45895e725d130f41a05b12e4cf
   macos-pkg-x64-downloads: 1720
   package-publisher: "<a href='https://www.codelerity.com/open-source/'>Codelerity Ltd</a>."
+  package-file: Apache-NetBeans-29-x86_64.pkg
+  package-url: https://www.codelerity.com/netbeans/
+  package-hash: b902907a54e2493b92926110da7bb679f2ab0d45895e725d130f41a05b12e4cf
+  package-downloads: 1720

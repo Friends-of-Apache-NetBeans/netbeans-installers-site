@@ -25,3 +25,7 @@
   linux-rpm-x64-hash: f7b305c31be3e4adb604e040e75a248ae44bcfa6de3193c8948bdcbda36e269b
   linux-rpm-x64-downloads: 361
   package-publisher: "<a href='https://www.codelerity.com/open-source/'>Codelerity Ltd</a>."
+  package-file: apache-netbeans-29-0.x86_64.rpm
+  package-url: https://www.codelerity.com/netbeans/
+  package-hash: f7b305c31be3e4adb604e040e75a248ae44bcfa6de3193c8948bdcbda36e269b
+  package-downloads: 361

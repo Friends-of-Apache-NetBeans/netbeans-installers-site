@@ -25,5 +25,8 @@
   macos-pkg-x64-file: Apache-NetBeans-29-zulu-21-x86_64.pkg
   macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/Apache-NetBeans-29-zulu-21-x86_64.pkg
   macos-pkg-x64-hash: cedd2ca4b3690c8848434429596dc43d9de26f497b993c5a59921a6547dfadf4
-  macos-pkg-x64-downloads: 4
-  jdk-name: Zulu
+  macos-pkg-x64-downloads: 196
+  package-file: Apache-NetBeans-29-zulu-21-x86_64.pkg
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulu-21/Apache-NetBeans-29-zulu-21-x86_64.pkg
+  package-hash: cedd2ca4b3690c8848434429596dc43d9de26f497b993c5a59921a6547dfadf4
+  package-downloads: 196

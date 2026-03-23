@@ -13,7 +13,7 @@
   jdk-trademark-line: Azul and Azul Zulu are trademarks or registered trademarks of Azul Systems, Inc.
   jdk-releasenotes-link: https://docs.azul.com/core/release-notes
   jdk-properties: zulufx-25.properties
-  jdk-name: FX-Zulu
+  jdk-name: Azul FX-Zulu
   jdk-maindownloadpage: https://www.azul.com/downloads/
   jdk-macos-x64-url: https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-fx-jdk25.0.2-macosx_x64.tar.gz
   jdk-macos-x64-sha: f222247da57e061123754ad732b3b18395e671f24e2e61d516513e5252b29f37
@@ -28,3 +28,7 @@
   linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulufx-25/apache-netbeans-29-0.zulufx-25.x86_64.rpm
   linux-rpm-x64-hash: e04c9dd510e54879ea2ffb76f8a42aed85eabf9c90237f83a8083e1e43b315c5
   linux-rpm-x64-downloads: 0
+  package-file: apache-netbeans-29-0.zulufx-25.x86_64.rpm
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulufx-25/apache-netbeans-29-0.zulufx-25.x86_64.rpm
+  package-hash: e04c9dd510e54879ea2ffb76f8a42aed85eabf9c90237f83a8083e1e43b315c5
+  package-downloads: 0

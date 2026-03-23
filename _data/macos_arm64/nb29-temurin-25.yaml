@@ -25,3 +25,7 @@
   macos-pkg-arm64-hash: dba728fc9697e583d7e87f87a77598f35504ada770c0a5fecf8e1acf1a96aa2e
   macos-pkg-arm64-downloads: 8637
   package-publisher: "<a href='https://www.codelerity.com/open-source/'>Codelerity Ltd</a>."
+  package-file: Apache-NetBeans-29-arm64.pkg
+  package-url: https://www.codelerity.com/netbeans/
+  package-hash: dba728fc9697e583d7e87f87a77598f35504ada770c0a5fecf8e1acf1a96aa2e
+  package-downloads: 8637

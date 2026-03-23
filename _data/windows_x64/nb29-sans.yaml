@@ -8,6 +8,8 @@
   windows-exe-x64-file: Apache-NetBeans-29.exe
   windows-exe-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/Apache-NetBeans-29.exe
   windows-exe-x64-hash: a25cfe4c181276436e03b59d35a8de91cd95ddb22e67892837c6118df5c3c8be
-  windows-exe-x64-downloads: 0
-  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
-  jdk-name: Zulu
+  windows-exe-x64-downloads: 9
+  package-file: Apache-NetBeans-29.exe
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/Apache-NetBeans-29.exe
+  package-hash: a25cfe4c181276436e03b59d35a8de91cd95ddb22e67892837c6118df5c3c8be
+  package-downloads: 9

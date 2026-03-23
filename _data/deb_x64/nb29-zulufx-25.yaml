@@ -27,4 +27,8 @@
   linux-deb-x64-file: apache-netbeans_29-1_zulufx-25_amd64.deb
   linux-deb-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulufx-25/apache-netbeans_29-1_zulufx-25_amd64.deb
   linux-deb-x64-hash: 3c52bb505f95d4891e565efe0d9d4f3cba95aaac9ea0255d95f8c22adf47b973
-  linux-deb-x64-downloads: 3
+  linux-deb-x64-downloads: 5
+  package-file: apache-netbeans_29-1_zulufx-25_amd64.deb
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-zulufx-25/apache-netbeans_29-1_zulufx-25_amd64.deb
+  package-hash: 3c52bb505f95d4891e565efe0d9d4f3cba95aaac9ea0255d95f8c22adf47b973
+  package-downloads: 5
