@@ -25,3 +25,7 @@
   linux-deb-x64-downloads: 3
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
   jdk-name: Zulu
+  package-file: apache-netbeans_27-1_amd64.deb
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/apache-netbeans_27-1_amd64.deb
+  package-hash: baadbd51cac76c9e5e1b7738850d2906a559b9eb807c3dae4141f349cdc3c1af
+  package-downloads: 3

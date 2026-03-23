@@ -25,3 +25,7 @@
   windows-exe-x64-downloads: 5261
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
   jdk-name: Zulu
+  package-file: Apache-NetBeans-28.exe
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/Apache-NetBeans-28.exe
+  package-hash: 893b21e6ff4eb99c0171845e4c2af15faa6f3ae34687a4ec2e1cffe14c5fb72f
+  package-downloads: 5261

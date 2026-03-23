@@ -13,3 +13,4 @@
   package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb29-sans/apache-netbeans-29-0.noarch.rpm
   package-hash: f10fd3be21207f5a85291af90b576de70a80bca964b7f88567dd605110fdb28a
   package-downloads: 1
+  package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"

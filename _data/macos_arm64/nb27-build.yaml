@@ -25,3 +25,7 @@
   macos-pkg-arm64-downloads: 870
   package-publisher: "<a href=\"https://www.friendsofapachenetbeans.org\">Friends of Apache NetBeans (FoAN)</a>"
   jdk-name: Zulu
+  package-file: Apache-NetBeans-27-arm64.pkg
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build/Apache-NetBeans-27-arm64.pkg
+  package-hash: c22a09a2ce5e2a9431888ee9c19158e24aa2881ce2d53820581d47abfe5570c6
+  package-downloads: 870
