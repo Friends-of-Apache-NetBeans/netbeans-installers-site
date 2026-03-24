@@ -16,7 +16,9 @@
                     /{{f[0]}}/
             {%-    endcapture -%}
             {%- if page.url == href -%}{%- assign aclass=" active"%}{%else%}{%assign aclass=""%}{%endif-%}
+              {%- unless f[0] == 'latest' -%}
             <li class="nav-link{{aclass}}"><a href="{{href| prepend: site.baseurl}}">{{ title | replace_first: 'rc', ''  }}</a></li>
+            {%- endunless -%}
         {%- endfor -%}
       </ul>
     </nav>

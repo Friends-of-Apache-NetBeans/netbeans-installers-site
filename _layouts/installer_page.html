@@ -1,7 +1,8 @@
 ---
 layout: page
 ---
-<h1>{{page.title}}</h1>
+<h1 id="top">{{page.title}}</h1>
+
 <h2>{{page.subtitle}}</h2>
 {% if page.tip %}
 <div class="tip fa icon-tip">
@@ -16,8 +17,14 @@ layout: page
 <h2>Apache Netbeans {{sb.netbeans-version }} without bundled JDK</h2>
 {%- else -%}
 <h2>Apache Netbeans {{sb.netbeans-version }} bundled with JDK {{sb.jdk-name}} {{sb.jdk-version}}</h2>
-{% endif %}
 {{sb.jdk-trademark-line}}
+{% endif %}
+{%-if sb.netbeans-version <  site.data.latest.latest -%}
+ <div class="warning">This package is unsupported becasue it is based on an archived version of Apache NetBeans.<br>
+   It is provided as a convenience.<br>
+   Please prefer a package based on the latest release: <span style="font-size: 140%;"><a href="#top">Apache NetBeans {{site.data.latest.latest}}</a></span>
+  </div>
+{%- endif -%}
 {%- if sb.jdk-features -%}
 <br /><b>JDK {{sb.jdk-name}} Features</b>: {{sb.jdk-features}}
 {%- endif -%}

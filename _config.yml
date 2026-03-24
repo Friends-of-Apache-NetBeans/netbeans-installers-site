@@ -9,7 +9,9 @@ exclude:
   - "/AssetsProcessor.java"
   - "/doUpdate.sh"
   - "/serve.sh"
-
+  - "_data/latest.yaml"
+tags:
+  latest: 29
 # Site settings
 title: Friends of Apache NetBeans
 subtitle: Apache NetBeans Open Source packages and installers
@@ -73,3 +75,7 @@ social:
 #
 #    twitter_image: ""
 
+
+data: 
+  latest: 
+    output: false
