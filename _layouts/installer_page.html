@@ -8,7 +8,6 @@ layout: page
   {{ page.tip }}
 </div>
 {%- endif -%}
-{{page.tip}}
 {% for org_hash in site.data[page.package-data] reversed %}
 {% assign sb = org_hash[1][0] %}
 <!--{{ org_hash[0] }}-->
@@ -30,7 +29,7 @@ layout: page
       {%- if sb.jdk-variant != "none" -%}
       + JDK {{ sb.jdk-version }}
       {%- endif -%}
-      <span class="type-arch">({{page.package-type}})</span></a></div>
+      <span class="type-arch">{{page.package-type}}</span></a></div>
   <aside>
     <code class="hash">SHA256 : {{ sb.package-hash }}</code><br>
   </aside>

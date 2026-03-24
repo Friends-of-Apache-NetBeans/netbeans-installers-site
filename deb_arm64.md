@@ -1,7 +1,8 @@
 ---
 layout: installer_page
 title: Debian-Linux packages for ARM 64
-package_type: deb_arm64
+package-type: .deb (arm64)
+package-data: deb_arm64
 os_arch: Linux on Arm64.
 subtitle:  Packages for Debian based Linux such as Ubuntu, Mint, Raspberry-OS.
 package-prefix: linux-deb-arm
