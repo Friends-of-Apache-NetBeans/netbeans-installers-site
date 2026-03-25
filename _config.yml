@@ -10,8 +10,7 @@ exclude:
   - "/doUpdate.sh"
   - "/serve.sh"
   - "_data/latest.yaml"
-tags:
-  latest: 29
+
 # Site settings
 title: Friends of Apache NetBeans
 subtitle: Apache NetBeans Open Source packages and installers
@@ -74,8 +73,3 @@ social:
 #    fb_image_type: "image/jpeg"
 #
 #    twitter_image: ""
-
-
-data: 
-  latest: 
-    output: false
