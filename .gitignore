@@ -4,6 +4,7 @@ dist/
 # Caches
 .sass-cache/
 .jekyll-cache/
+.jekyll-metadata 
 
 # Bundler
 .bundle/
