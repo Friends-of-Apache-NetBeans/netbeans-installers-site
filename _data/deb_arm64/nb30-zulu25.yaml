@@ -27,8 +27,8 @@
   linux-deb-arm64-file: apache-netbeans_30-zulu-25-1_arm64.deb
   linux-deb-arm64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/apache-netbeans_30-zulu-25-1_arm64.deb
   linux-deb-arm64-hash: b02fb34e745df58fea742ede2ab2772932a30bad7eedb4292258016dc5211edd
-  linux-deb-arm64-downloads: 0
+  linux-deb-arm64-downloads: 2
   package-file: apache-netbeans_30-zulu-25-1_arm64.deb
   package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/apache-netbeans_30-zulu-25-1_arm64.deb
   package-hash: b02fb34e745df58fea742ede2ab2772932a30bad7eedb4292258016dc5211edd
-  package-downloads: 0
+  package-downloads: 2
