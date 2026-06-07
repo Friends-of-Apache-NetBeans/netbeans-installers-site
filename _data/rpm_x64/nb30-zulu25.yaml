@@ -23,12 +23,12 @@
   jdk-linux-x64-sha: 664f14258596537add2e4e91446594a451cd2710dba88f24533ba0e084bdc972
   jdk-linux-arm-url: https://cdn.azul.com/zulu/bin/zulu25.32.17-ca-jdk25.0.2-linux_aarch64.tar.gz
   jdk-linux-arm-sha: f7295abb1decb2f6e0ea9f760a70917f2d47356db4366d615c7ab9b01c3c6866
-  github-run_id: 26360592427
+  github-run_id: 27090574590
   linux-rpm-x64-file: apache-netbeans-30-zulu-25-0.x86_64.rpm
   linux-rpm-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/apache-netbeans-30-zulu-25-0.x86_64.rpm
   linux-rpm-x64-hash: e8fbe59f2e30184cdb4b9e45a2f56f2fe5cf7bba474fdfed83dbb0383c24d064
-  linux-rpm-x64-downloads: 4
+  linux-rpm-x64-downloads: 50
   package-file: apache-netbeans-30-zulu-25-0.x86_64.rpm
   package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/apache-netbeans-30-zulu-25-0.x86_64.rpm
   package-hash: e8fbe59f2e30184cdb4b9e45a2f56f2fe5cf7bba474fdfed83dbb0383c24d064
-  package-downloads: 4
+  package-downloads: 50
