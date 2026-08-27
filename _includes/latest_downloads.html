@@ -1,0 +1,41 @@
+{%- comment -%}
+Landing-page download panel: shows the latest Apache NetBeans release for
+every platform, with a download button + SHA256, linking through to each
+platform page for older (archived) releases.
+{%- endcomment -%}
+{%- assign latest = site.data.latest.latest -%}
+{%- assign platforms = "windows_x64,macos_arm64,macos_x64,deb_x64,deb_arm64,rpm_x64" | split: "," -%}
+
+<section class="latest-downloads" id="downloads">
+  <h2>Download the Latest Release</h2>
+  <p>The latest release, ready to install. Older releases are available in the archive on each platform page.</p>
+
+  <div class="download-grid">
+    {%- for p in platforms -%}
+      {%- case p -%}
+        {%- when 'windows_x64' -%}{%- assign label = 'Windows' -%}{%- assign arch = 'x64' -%}{%- assign icon = 'fa-windows' -%}
+        {%- when 'macos_arm64' -%}{%- assign label = 'macOS' -%}{%- assign arch = 'Apple Silicon (arm64)' -%}{%- assign icon = 'fa-apple' -%}
+        {%- when 'macos_x64' -%}{%- assign label = 'macOS' -%}{%- assign arch = 'Intel (x64)' -%}{%- assign icon = 'fa-apple' -%}
+        {%- when 'deb_x64' -%}{%- assign label = 'Linux .deb' -%}{%- assign arch = 'x64' -%}{%- assign icon = 'fa-linux' -%}
+        {%- when 'deb_arm64' -%}{%- assign label = 'Linux .deb' -%}{%- assign arch = 'arm64' -%}{%- assign icon = 'fa-linux' -%}
+        {%- when 'rpm_x64' -%}{%- assign label = 'Linux .rpm' -%}{%- assign arch = 'x64' -%}{%- assign icon = 'fa-linux' -%}
+      {%- endcase -%}
+      {%- for org_hash in site.data[p] -%}
+        {%- assign sb = org_hash[1][0] -%}
+        {%- if sb.netbeans-version == latest -%}
+    <div class="dl-card">
+      <h3><i class="fa {{ icon }}"></i> {{ label }} <span class="dl-arch">{{ arch }}</span></h3>
+      <a class="btn" href="{{ sb.package-url }}">
+        Download
+        {%- if sb.jdk-variant != "none" %} + JDK {{ sb.jdk-version }}{% endif -%}
+      </a>
+      <div class="dl-file">{{ sb.package-file }}</div>
+      <code class="hash">SHA256 : {{ sb.package-hash }}</code>
+      <a class="dl-more" href="{{ site.baseurl }}/{{ p }}/">Details &amp; older releases &rarr;</a>
+    </div>
+        {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</section>

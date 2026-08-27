@@ -1,26 +1,8 @@
 <header class="navigation" role="banner"><!-- header.html-->
   <div class="navigation-wrapper">
     <a href="{{ site.baseurl }}/" class="site-info">
-    <h1 class="site-title">{{site.title}}</h1>
+    <span class="site-eyebrow">{{ site.title }}</span>
     <h2 class="site-subtitle">{{ site.subtitle }}</h2>
     </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><a href="/">HOME</a></li>
-        {%- for f in site.data -%}
-            {%-    assign title=f[0] -%}
-            {%-    capture href -%}
-                    /{{f[0]}}/
-            {%-    endcapture -%}
-            {%- if page.url == href -%}{%- assign aclass=" active"%}{%else%}{%assign aclass=""%}{%endif-%}
-              {%- unless f[0] == 'latest' -%}
-            <li class="nav-link{{aclass}}"><a href="{{href| prepend: site.baseurl}}">{{ title | replace_first: 'rc', ''  }}</a></li>
-            {%- endunless -%}
-        {%- endfor -%}
-      </ul>
-    </nav>
   </div>
 </header><!-- end header.html -->

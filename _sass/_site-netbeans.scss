@@ -53,9 +53,72 @@ body {
   }
 
 }
-link.nav-link.active {
-    background-color: white;
-    color:black;
+header.navigation {
+  background: linear-gradient(135deg, #1565c0 0%, #1e88e5 45%, #26a69a 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+
+  .site-info, .site-subtitle {
+    color: $white;
+  }
+  .site-eyebrow {
+    display: block;
+    text-align: left;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    opacity: 0.85;
+    margin-top: 0.6em;
+  }
+  .site-subtitle {
+    margin: 0.05em 0 0.4em;
+    font-weight: 700;
+  }
+}
+
+.latest-downloads {
+  margin: 2em 0 3em;
+  padding-top: 1em;
+  border-top: 1px solid $light-gray;
+
+  > h2 { margin-bottom: 0.25em; }
+
+  .download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+
+  .dl-card {
+    border: 1px solid $light-gray;
+    border-radius: 0.5em;
+    padding: 1em 1.2em;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin: 0 0 0.5em;
+      .fa { margin-right: 0.4em; }
+    }
+    .dl-arch {
+      display: block;
+      font-size: 0.7em;
+      font-weight: normal;
+      color: $medium-gray;
+    }
+    .btn { align-self: flex-start; margin-bottom: 0.5em; }
+    .dl-file {
+      font-size: 0.85em;
+      color: $medium-gray;
+      word-break: break-all;
+      margin-bottom: 0.25em;
+    }
+    .dl-more {
+      margin-top: auto;
+      padding-top: 0.6em;
+      font-size: 0.9em;
+    }
+  }
 }
 
 details.archive {

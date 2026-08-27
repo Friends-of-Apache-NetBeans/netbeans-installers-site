@@ -1,55 +1,21 @@
-<h1>Installers and packages for <b>Apache NetBeans</b></h1>
-
+{%- assign latest = site.data.latest.latest -%}
+{%- assign jdkname = "" -%}
+{%- assign jdkver = "" -%}
+{%- for org_hash in site.data.windows_x64 -%}
+  {%- assign e = org_hash[1][0] -%}
+  {%- if e.netbeans-version == latest -%}
+    {%- assign jdkname = e.jdk-name -%}
+    {%- assign jdkver = e.jdk-version -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
 <section>
   <p><a href="https://netbeans.apache.org">Apache NetBeans</a> packages / installers
     provided by Friends of Apache NetBeans (see <a href="#who">who we are</a>).
-    These packages are built with NBPackage using the official Apache NetBeans
-    binary zip release. The packages themselves are not released by the Apache
-    Software Foundation.
-  </p>
-  <p>Most installers include a local Java JDK for the IDE to run on,
-    offering a self-contained out-of-the-box experience. Additional JDK's for projects
-    may be registered and/or downloaded using <code>Tools / Java Platforms</code> in the
-    IDE menu, supporting development of projects from Java 8 up.</p>
-  <p>
-    For each supported Apache NetBeans release there is also a JDK-less version per platform.
-    This requires that your machine already has a JDK installed. 
-  </p>
-  <p>To get the proper package or installer for your platform, select one of the tabs above or one of the links below.
-    <dl>
-      <dt><a href="deb_arm64/">deb_arm64</a></dt>
-      <dd>Debian packages for ARM64 machines such Raspberry Pi with Raspberry-OS.</dd>
-      <dt><a href="deb_x64/">deb_x64</a></dt>
-      <dd>Debian packages for Intel and AMD PCs and laptops. Thunk Debian, Ubuntu, Linux Mint, etc.</dd>
-      <dt><a href="macos_arm64/">macOS_ARM64</a></dt>
-      <dd>Apple macOS packages on ARM, a.k.a. Apple Silicon (M1, M2, M3, M4, M5,...).</dd>
-      <dt><a href="macos_x64/">macOS_x64</a></dt>
-      <dd>Apple macOS packages on Intel 64 bit.</dd>
-      <dt><a href="rpm_x64/">rpm_x64</a></dt>
-      <dd>Red Hat Package Manager (RPM) packages for Intel/AMD 64 bit.</dd>
-      <dt><a href="windows_x64">Windows_x64</a></dt>
-      <dd>Microsoft Windows installer for Intel/AMD 64 bit.</dd>
-    </dl>
-  </p>
-  <p>An installer is a self-sufficient program that contains the software to be installed.<br>
-  A package is not a program but container file with configuration instructions or the actual package manager of the platform.</p>
-</section>
-
-<section class="terms">
-  <p>These packages and installers are provided without warranty, and under the licenses and terms of the bundled
-    software. Please make sure you're familiar with all terms before downloading.
-    Apache NetBeans is provided under the terms of the
-    <a href="https://github.com/apache/netbeans/blob/master/LICENSE">Apache Software License</a>.
-    A package or installer may contain a bundled JDK. Details of the bundled JDK are available per package or installer.
-  </p>
-</section>
-
-<section class="support" >
-  
-  <h2 id="Support">Support</h2>
-  <p>For issues with the installers / packages themselves, please
-    <a href="https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/issues">raise an issue</a>
-    on our GitHub repository.</p>
-  <p>For community support with the IDE itself, please use the
-    <a href="https://netbeans.apache.org/community/mailing-lists/">Apache NetBeans mailing lists</a>.</p>
+    Built with NBPackage from the official Apache NetBeans binary zip release;
+    they are not released by the Apache Software Foundation.</p>
+  <p>Every installer below bundles a Java JDK{% if jdkname != "" %} &mdash; {{ jdkname }} {{ jdkver }} for Apache NetBeans {{ latest }}{% endif %},
+    so the IDE runs out of the box, with no separate Java installation required.
+    Additional JDKs for your projects can be registered or downloaded via
+    <code>Tools / Java Platforms</code> in the IDE.</p>
 </section>
