@@ -58,6 +58,34 @@ link.nav-link.active {
     color:black;
 }
 
+details.archive {
+  margin-top: 3em;
+  border-top: 2px solid $light-gray;
+  padding-top: 1em;
+
+  > summary {
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: $medium-gray;
+    padding: 0.5em 0;
+    list-style: none;
+    user-select: none;
+  }
+  > summary::-webkit-details-marker { display: none; }
+  > summary::before {
+    content: "\25B6\00a0\00a0";
+    font-size: 0.8em;
+    color: $medium-gray;
+  }
+  &[open] > summary::before {
+    content: "\25BC\00a0\00a0";
+  }
+  > summary:hover {
+    color: black;
+  }
+}
+
 div.tip {
   border: solid #aaf 3px;
   padding-left:6em;

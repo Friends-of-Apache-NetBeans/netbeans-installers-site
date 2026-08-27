@@ -1,56 +1,49 @@
 ---
 layout: page
 ---
-<h1 id="top">{{page.title}}</h1>
+<h1 id="top">{{ page.title }}</h1>
 
-<h2>{{page.subtitle}}</h2>
+<h2>{{ page.subtitle }}</h2>
 {% if page.tip %}
 <div class="tip fa icon-tip">
   {{ page.tip }}
 </div>
 {%- endif -%}
+
+{%- assign latest = site.data.latest.latest -%}
+
+{%- comment -%} ---------- Latest release, shown immediately ---------- {%- endcomment -%}
 {% for org_hash in site.data[page.package-data] reversed %}
-{% assign sb = org_hash[1][0] %}
+{%- assign sb = org_hash[1][0] -%}
+{%- if sb.netbeans-version == latest -%}
 <!--{{ org_hash[0] }}-->
-
-{%- if sb.jdk-variant == "none" -%}
-<h2>Apache Netbeans {{sb.netbeans-version }} without bundled JDK</h2>
-{%- else -%}
-<h2>Apache Netbeans {{sb.netbeans-version }} bundled with JDK {{sb.jdk-name}} {{sb.jdk-version}}</h2>
-{{sb.jdk-trademark-line}}
-{% endif %}
-{%-if sb.netbeans-version <  site.data.latest.latest -%}
- <div class="warning">This package is unsupported becasue it is based on an archived version of Apache NetBeans.<br>
-   It is provided as a convenience.<br>
-   Please prefer a package based on the latest release: <span style="font-size: 140%;"><a href="#top">Apache NetBeans {{site.data.latest.latest}}</a></span>
-  </div>
-{%- endif -%}
-{%- if sb.jdk-features -%}
-<br /><b>JDK {{sb.jdk-name}} Features</b>: {{sb.jdk-features}}
-{%- endif -%}
-<br>This package is published by {{sb.package-publisher}}.
-
-<section class="download-arch">
-  <div><a href="{{ sb.package-url }}" class="btn"><i class="fa {{page.btn-icon}}"></i>
-      Apache NetBeans {{sb.netbeans-version}}
-      {%- if sb.jdk-variant != "none" -%}
-      + JDK {{ sb.jdk-version }}
-      {%- endif -%}
-      <span class="type-arch">{{page.package-type}}</span></a></div>
-  <aside>
-    <code class="hash">SHA256 : {{ sb.package-hash }}</code><br>
-  </aside>
-    {{page.install-method}}
-    {%- if sb.jdk-variant == "none" -%}
-    <div class="tip">To run NetBeans without a bundled JDK, you must have a JDK installed!</div>
-    {%- endif -%}
-  {%- if sb.jdk-variant != "none" -%}
-  <p>
-    The <a href="{{sb.jdk-releasenotes-link}}">release notes</a> of {{sb.jdk-vendor}} {{sb.jdk-version}}.<br>
-    This and other versions of the bundled JDK can be downloaded from <a
-      href="{{sb.jdk-maindownloadpage}}">{{sb.jdk-vendor}}</a>.<br>
-  </p>
-  {%- endif -%}
-</section>
+{% include installer_release.html sb=sb %}
 <!-- /{{ org_hash[0] }}-->
+{%- endif -%}
 {% endfor %}
+
+{%- comment -%} ---------- Count archived (older) releases ---------- {%- endcomment -%}
+{%- assign archive_count = 0 -%}
+{%- for org_hash in site.data[page.package-data] -%}
+{%- assign sb = org_hash[1][0] -%}
+{%- if sb.netbeans-version != latest -%}{%- assign archive_count = archive_count | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+
+{%- comment -%} ---------- Archive of older releases ---------- {%- endcomment -%}
+{%- if archive_count > 0 -%}
+<details class="archive">
+  <summary>Archived releases ({{ archive_count }})</summary>
+  <div class="warning">These packages are based on archived versions of Apache NetBeans and are unsupported.<br>
+    They are provided as a convenience. Please prefer the latest release:
+    <span style="font-size: 140%;"><a href="#top">Apache NetBeans {{ latest }}</a></span>
+  </div>
+  {% for org_hash in site.data[page.package-data] reversed %}
+  {%- assign sb = org_hash[1][0] -%}
+  {%- if sb.netbeans-version != latest -%}
+  <!--{{ org_hash[0] }}-->
+  {% include installer_release.html sb=sb %}
+  <!-- /{{ org_hash[0] }}-->
+  {%- endif -%}
+  {% endfor %}
+</details>
+{%- endif -%}
