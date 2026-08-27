@@ -10,12 +10,13 @@
   {%- endif -%}
 {%- endfor -%}
 <section>
-  <p><a href="https://netbeans.apache.org">Apache NetBeans</a> packages / installers
-    provided by Friends of Apache NetBeans (see <a href="#who">who we are</a>).
-    Built with NBPackage from the official Apache NetBeans binary zip release;
-    they are not released by the Apache Software Foundation.</p>
-  <p>Every installer below bundles a Java JDK{% if jdkname != "" %} &mdash; {{ jdkname }} {{ jdkver }} for Apache NetBeans {{ latest }}{% endif %},
-    so the IDE runs out of the box, with no separate Java installation required.
-    Additional JDKs for your projects can be registered or downloaded via
-    <code>Tools / Java Platforms</code> in the IDE.</p>
+  <p>Welcome! We're <a href="#who">Friends of Apache NetBeans</a>, and we build these
+    ready-to-go packages and installers for <a href="https://netbeans.apache.org">Apache NetBeans</a>
+    so you can get coding faster. We put them together with NBPackage straight from the
+    official Apache NetBeans binary release &mdash; just note they're our builds, not official
+    releases from the Apache Software Foundation.</p>
+  <p>Best of all, there's nothing else to install: every download here comes with a Java JDK
+    built right in{% if jdkname != "" %} &mdash; {{ jdkname }} {{ jdkver }}, paired with Apache NetBeans {{ latest }}{% endif %},
+    so the IDE just works out of the box. Need a different JDK for your projects? No problem
+    &mdash; add or download more anytime from <code>Tools / Java Platforms</code> inside the IDE.</p>
 </section>
