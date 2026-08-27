@@ -263,7 +263,7 @@ img {
 }
 
 #page-title {
-  padding-top: 6em;
+  padding-top: 7em;
   h1, p {
     @include outer-container;
     padding: 0 20px;
@@ -272,7 +272,9 @@ img {
     font-weight: normal;
   }
   h1 {
+    margin-top: 0;
     font-size: 1.4em;
+    &:empty { display: none; }
     @include media($mobile) {
       font-size: 2em;
     }
