@@ -1,0 +1,42 @@
+- package-publisher: "<a href='https://www.friendsofapachenetbeans.org'>Friends of Apache NetBeans (FoAN)</a>"
+  netbeans-version: 31
+  netbeans-url: https://dlcdn.apache.org/netbeans/netbeans/31/netbeans-31-bin.zip
+  netbeans-sha: 108edccc78075b0bc87e3e055170fd03c17442cd1748b68297b49ebe003f8fa5cc7cb265c2fbbe2d5c802d0b29fe5654b89a78a8fd92b784147a7a982f1a42df
+  netbeans-properties: nb31.properties
+  nbpackage-url: https://dlcdn.apache.org/netbeans/netbeans-nbpackage/1.0/nbpackage-1.0-bin.zip
+  nbpackage-sha: 585bd2dadb28c4d3e4bfe97f41e058975bd9a95d960bb620fa5b3b907e3c6d40fc63024a5a592739d9e8a510c90dd8a5ec24a170f5153f0a21bf6086596ed5a4
+  jdk-windows-x64-url: https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_x64_windows_hotspot_26.0.2_10.zip
+  jdk-windows-x64-sha: 0b532502e29a5d2babe608069f6df2423ae5e1aa714b715b560217cf8c6ce8ff
+  jdk-version: 26.0.2+10
+  jdk-vendor: Eclipse Adoptium
+  jdk-variant: temurin-26
+  jdk-trademark-line: "'Adoptium' and 'Adoptium Eclipse Temurin' are trademarks of the Eclipse Adoptium Working Group."
+  jdk-releasenotes-link: https://adoptium.net/temurin/release-notes
+  jdk-properties: temurin-26.properties
+  jdk-name: Temurin
+  jdk-maindownloadpage: https://adoptium.net/temurin/releases
+  jdk-macos-x64-url: https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_x64_mac_hotspot_26.0.2_10.tar.gz
+  jdk-macos-x64-sha: def6874a01072031c2c850b03b4d29d4e97772af7cc2f564f6fae03f98eb6ea9
+  jdk-macos-arm-url: https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.2_10.tar.gz
+  jdk-macos-arm-sha: 4c9255ed5a9fa84ad6e25675bac6ba6a4906fc7878169d7369a1424157b50256
+  jdk-linux-x64-url: https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_x64_linux_hotspot_26.0.2_10.tar.gz
+  jdk-linux-x64-sha: 56f768372f6ca1e2eb4c5f46b78f627949e8dcfe9c9723926cf45a45faf35802
+  jdk-linux-arm-url: https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.2_10.tar.gz
+  jdk-linux-arm-sha: f82aeb1d5b0ddb93d3bd81c20948bc560c0758993157202424c17e805e2effbb
+  build-deb-xarm: false
+  build-deb-arm: false
+  build-rpm-x64: false
+  build-windows: true
+  sign-windows: true # windows sign request
+  build-macos-arm: false
+  build-macos-x64: false
+  sign-macos: false # macos sign request
+  github-run_id: 31505094428
+  macos-pkg-x64-file: Apache-NetBeans-31-x86_64.pkg
+  macos-pkg-x64-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb31/Apache-NetBeans-31-x86_64.pkg
+  macos-pkg-x64-hash: 00182b85b77c24b37c63092b75bbb9c06c7eded62fbe582d5f6ffb51b3411099
+  macos-pkg-x64-downloads: 1539
+  package-file: Apache-NetBeans-31-x86_64.pkg
+  package-url: https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb31/Apache-NetBeans-31-x86_64.pkg
+  package-hash: 00182b85b77c24b37c63092b75bbb9c06c7eded62fbe582d5f6ffb51b3411099
+  package-downloads: 1539
