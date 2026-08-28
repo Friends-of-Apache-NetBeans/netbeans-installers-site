@@ -3,12 +3,17 @@ body {
 
   #page-title {
     h1 {
-      /* background-image: url(../assets/apache-netbeans.svg);*/
+      background-image: url(../assets/apache-netbeans.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: right center;
       margin-right: 1em;
       padding-right: 4em;
+      min-height: 80px;
+      // The page title h1 is empty on these pages (the visible heading lives
+      // in the content). Core hides empty h1s, but we keep it shown here so
+      // the logo background image has a box to render in.
+      &:empty { display: block; }
       @include media ($mobile) {
         min-height: 100px;
       }
